@@ -1,9 +1,9 @@
-# bun-template
-[![npm version](https://badge.fury.io/js/bun-template.svg)](https://www.npmjs.com/package/bun-template)
+# dok-matrix
+[![npm version](https://badge.fury.io/js/dok-matrix.svg)](https://www.npmjs.com/package/dok-matrix)
 
-Bun template for creating projects using bunjs
+Handling matrix for games
 
-![](https://jacklehamster.github.io/bun-template/icon.png)
+![](https://jacklehamster.github.io/dok-matrix/icon.png)
 ## Install bun
 
 https://bun.sh/
@@ -23,8 +23,8 @@ curl -fsSL https://bun.sh/install | bash
 
 ## Run example
 
-[https://jacklehamster.github.io/bun-template/example/](https://jacklehamster.github.io/bun-template/example/)
+[https://jacklehamster.github.io/dok-matrix/example/](https://jacklehamster.github.io/dok-matrix/example/)
 
 ## Github Source
 
-[https://github.com/jacklehamster/bun-template/](https://github.com/jacklehamster/bun-template/)
+[https://github.com/jacklehamster/dok-matrix/](https://github.com/jacklehamster/dok-matrix/)
