@@ -9,5 +9,5 @@ import { IPositionMatrix, ChangeListener, MoveResult } from "./matrix/IPositionM
 import { ProjectionMatrix } from "./matrix/ProjectionMatrix";
 import Matrix from "./matrix/Matrix";
 
-export type { ICollisionDetector, Angle, IAngleMatrix, IMatrix, IPositionMatrix, ChangeListener, MoveResult };
-export { angleStep, createTurnMatrix, createTiltMatrix, PositionUtils, PositionMatrix, ProjectionMatrix, Matrix };
+export type { ICollisionDetector, Angle, IAngleMatrix, IMatrix, IPositionMatrix, ChangeListener };
+export { angleStep, createTurnMatrix, createTiltMatrix, PositionUtils, PositionMatrix, ProjectionMatrix, Matrix, MoveResult };
