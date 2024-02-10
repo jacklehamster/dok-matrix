@@ -1,3 +1,3 @@
-import { Hello } from "bun-template";
+import { Matrix } from "dok-matrix";
 
-export { Hello };
+export { Matrix };
