@@ -67,8 +67,8 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "dok-types": "^1.0.4",
+    "dok-types": "^1.0.5",
     "gl-matrix": "^3.4.3",
-    "progressive-value": "^1.0.1"
+    "progressive-value": "^1.0.2"
   }
 }
