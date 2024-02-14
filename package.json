@@ -69,6 +69,6 @@
   "dependencies": {
     "dok-types": "^1.0.5",
     "gl-matrix": "^3.4.3",
-    "progressive-value": "^1.0.2"
+    "progressive-value": "^1.0.4"
   }
 }

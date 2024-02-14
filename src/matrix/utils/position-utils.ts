@@ -1,6 +1,6 @@
 import { Vector } from "dok-types";
 import { IMatrix } from "../IMatrix";
-import { IMotor, Refresh, UpdatePayload } from "motor-loop";
+import { IMotor, Cycle, UpdatePayload } from "motor-loop";
 import { VectorPool } from "dok-types";
 
 interface Props extends Partial<Data> {
@@ -11,7 +11,7 @@ interface Data {
   vectorPool: VectorPool;
 }
 
-export class PositionUtils implements Refresh<Data> {
+export class PositionUtils implements Cycle<Data> {
   private readonly vectorPool: VectorPool;
   private readonly motor;
   private readonly data;
