@@ -8,19 +8,17 @@ import { MoveResult } from "./IPositionMatrix";
 import { Vector } from "dok-types";
 
 interface Props {
-  positionUtils: PositionUtils;
   blocker?: ICollisionDetector;
 }
 
 export class PositionMatrix implements IPositionMatrix {
   readonly #matrix: Matrix = Matrix.create().setPosition(0, 0, 0);
   readonly #changeListeners: Set<ChangeListener> = new Set();
-  readonly #positionUtils;
+  readonly #tempVector: Vector = [0, 0, 0];
   readonly position: Vector = [0, 0, 0];
   readonly moveBlocker?: ICollisionDetector;
 
-  constructor({ positionUtils, blocker }: Props, onChange?: (dx: number, dy: number, dz: number) => void) {
-    this.#positionUtils = positionUtils;
+  constructor({ blocker }: Props, onChange?: (dx: number, dy: number, dz: number) => void) {
     this.moveBlocker = blocker;
     if (onChange) {
       this.onChange(onChange);
@@ -45,10 +43,11 @@ export class PositionMatrix implements IPositionMatrix {
 
   moveBy(x: number, y: number, z: number, turnMatrix?: IMatrix) {
     const vector = Matrix.getMoveVector(x, y, z, turnMatrix);
-    const blocked = this.moveBlocker?.isBlocked(this.#positionUtils.toVector(
+    const blocked = this.moveBlocker?.isBlocked(PositionUtils.toVector(
       this.position[0] + vector[0],
       this.position[1] + vector[1],
       this.position[2] + vector[2],
+      this.#tempVector,
     ), this.position);
     if (!blocked) {
       if (vector[0] || vector[1] || vector[2]) {
@@ -65,7 +64,7 @@ export class PositionMatrix implements IPositionMatrix {
     if (this.position[0] === x && this.position[1] === y && this.position[2] === z) {
       return MoveResult.AT_POSITION;
     }
-    const blocked = this.moveBlocker?.isBlocked(this.#positionUtils.toVector(x, y, z), this.position);
+    const blocked = this.moveBlocker?.isBlocked(PositionUtils.toVector(x, y, z, this.#tempVector), this.position);
     if (!blocked) {
       const [curX, curY, curZ] = this.#matrix.getPosition();
       if (curX !== x || curY !== y || curZ !== z) {

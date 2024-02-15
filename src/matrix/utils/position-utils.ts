@@ -37,6 +37,13 @@ export class PositionUtils implements Cycle<Data> {
     return this.vectorPool.create(x, y, z);
   }
 
+  static toVector(x: number, y: number, z: number, vector: Vector): Vector {
+    vector[0] = x;
+    vector[1] = y;
+    vector[2] = z;
+    return vector;
+  }
+
   static transformToPosition(transform: IMatrix, pos: Vector) {
     const m = transform.getMatrix();
     pos[0] = m[12]; // Value in the 4th column, 1st row (indices start from 0)
