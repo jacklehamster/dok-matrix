@@ -1,3 +1,4 @@
+import { List } from "abstract-list";
 import { IMatrix } from "./IMatrix";
 import { ICollisionDetector } from "./collision/ICollisionDetector";
 import { Vector } from "dok-types";
@@ -15,8 +16,8 @@ export interface IPositionMatrix extends IMatrix {
   moveTo(x: number, y: number, z: number): MoveResult;
   gotoPos(x: number, y: number, z: number, speed?: number): MoveResult;
   movedTo(x: number, y: number, z: number): this;
-  get position(): Vector;
   onChange(listener: ChangeListener): this;
   removeChangeListener(listener: ChangeListener): void;
-  moveBlocker?: ICollisionDetector;
+  get position(): Vector;
+  blockers?: List<ICollisionDetector>;
 }

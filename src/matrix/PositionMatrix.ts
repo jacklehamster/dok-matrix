@@ -17,10 +17,10 @@ export class PositionMatrix implements IPositionMatrix {
   readonly #changeListeners: Set<ChangeListener> = new Set();
   readonly #tempVector: Vector = [0, 0, 0];
   readonly position: Vector = [0, 0, 0];
-  readonly #blockers?: List<ICollisionDetector>;
+  readonly blockers?: List<ICollisionDetector>;
 
   constructor({ blockers }: Props, onChange?: (dx: number, dy: number, dz: number) => void) {
-    this.#blockers = blockers;
+    this.blockers = blockers;
     if (onChange) {
       this.onChange(onChange);
     }
@@ -44,7 +44,7 @@ export class PositionMatrix implements IPositionMatrix {
 
   moveBy(x: number, y: number, z: number, turnMatrix?: IMatrix) {
     const vector = Matrix.getMoveVector(x, y, z, turnMatrix);
-    const blocked = any(this.#blockers, blocker => blocker.isBlocked(PositionUtils.toVector(
+    const blocked = any(this.blockers, blocker => blocker.isBlocked(PositionUtils.toVector(
       this.position[0] + vector[0],
       this.position[1] + vector[1],
       this.position[2] + vector[2],
@@ -65,7 +65,7 @@ export class PositionMatrix implements IPositionMatrix {
     if (this.position[0] === x && this.position[1] === y && this.position[2] === z) {
       return MoveResult.AT_POSITION;
     }
-    const blocked = any(this.#blockers, blocker => blocker.isBlocked(PositionUtils.toVector(x, y, z, this.#tempVector), this.position));
+    const blocked = any(this.blockers, blocker => blocker.isBlocked(PositionUtils.toVector(x, y, z, this.#tempVector), this.position));
     if (!blocked) {
       const [curX, curY, curZ] = this.#matrix.getPosition();
       if (curX !== x || curY !== y || curZ !== z) {
