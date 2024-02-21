@@ -19,7 +19,7 @@ export class PositionMatrix implements IPositionMatrix {
   readonly position: Vector = [0, 0, 0];
   readonly blockers?: List<ICollisionDetector>;
 
-  constructor({ blockers }: Props, onChange?: (dx: number, dy: number, dz: number) => void) {
+  constructor({ blockers }: Props = {}, onChange?: (dx: number, dy: number, dz: number) => void) {
     this.blockers = blockers;
     if (onChange) {
       this.onChange(onChange);
