@@ -67,8 +67,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "abstract-list": "^1.0.8",
-    "dok-types": "^1.0.5",
+    "abstract-list": "^1.0.9",
+    "change-listener": "^1.0.1",
+    "dok-types": "^1.0.7",
     "gl-matrix": "^3.4.3",
     "progressive-value": "^1.0.4"
   }

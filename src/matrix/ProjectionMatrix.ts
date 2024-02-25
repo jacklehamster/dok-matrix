@@ -1,3 +1,4 @@
+import { ChangeNotifier, IChangeListener } from "change-listener";
 import { IMatrix } from "./IMatrix";
 import Matrix from "./Matrix";
 import { NumVal } from "progressive-value";
@@ -10,14 +11,32 @@ export class ProjectionMatrix implements IMatrix {
   readonly #perspectiveMatrix = Matrix.create();
   readonly #orthoMatrix = Matrix.create();
   readonly #size: [number, number] = [0, 0];
+  readonly #changeNotifier = new ChangeNotifier(this);
   readonly perspective: NumVal;
   readonly zoom: NumVal;
 
-  constructor(private onChange?: () => void) {
-    this.perspective = new NumVal(DEFAULT_PERSPECTIVE_LEVEL, onChange);
+  constructor() {
+    const onChangeProjection = {
+      onChange: () => {
+        this.#baseMatrix.combine(this.#orthoMatrix, this.#perspectiveMatrix, this.perspective.valueOf());
+      }
+    };
+    this.perspective = new NumVal(DEFAULT_PERSPECTIVE_LEVEL, onChangeProjection.onChange);
     this.zoom = new NumVal(DEFAULT_ZOOM, zoom => {
       this.configure(this.#size, zoom);
     });
+    this.#perspectiveMatrix.addChangeListener(onChangeProjection);
+    this.#orthoMatrix.addChangeListener(onChangeProjection);
+    this.#baseMatrix.addChangeListener(this.#changeNotifier);
+  }
+
+  addChangeListener(listener: IChangeListener<IMatrix>): this {
+    this.#changeNotifier.addChangeListener(listener);
+    return this;
+  }
+
+  removeChangeListener(listener: IChangeListener<IMatrix>): void {
+    this.#changeNotifier.removeChangeListener(listener);
   }
 
   private configPerspectiveMatrix(angle: number, ratio: number, near: number, far: number) {
@@ -38,11 +57,9 @@ export class ProjectionMatrix implements IMatrix {
     const angle = 45 / Math.sqrt(zoom);
     this.configPerspectiveMatrix(angle, ratio, Math.max(near, 0.00001), far);
     this.configOrthoMatrix(ratio / zoom / zoom, 1 / zoom / zoom, -far, far);
-    this.onChange?.();
   }
 
   getMatrix(): Float32Array {
-    this.#baseMatrix.combine(this.#orthoMatrix, this.#perspectiveMatrix, this.perspective.valueOf());
     return this.#baseMatrix.getMatrix();
   }
 }

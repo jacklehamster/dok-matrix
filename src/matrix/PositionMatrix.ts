@@ -1,49 +1,45 @@
 import { PositionUtils } from "./utils/position-utils";
 import { IMatrix } from "./IMatrix";
-import Matrix from "./Matrix";
 import { ICollisionDetector } from "./collision/ICollisionDetector";
 import { IPositionMatrix } from "./IPositionMatrix";
-import { ChangeListener } from "./IPositionMatrix";
 import { MoveResult } from "./IPositionMatrix";
 import { Vector } from "dok-types";
 import { List, any } from "abstract-list";
+import Matrix from "./Matrix";
+import { ChangeNotifier, IChangeListener } from "change-listener";
 
 interface Props {
   blockers?: List<ICollisionDetector>;
 }
 
 export class PositionMatrix implements IPositionMatrix {
-  readonly #matrix: Matrix = Matrix.create().setPosition(0, 0, 0);
-  readonly #changeListeners: Set<ChangeListener> = new Set();
+  readonly #matrix = Matrix.create().setPosition(0, 0, 0);
   readonly #tempVector: Vector = [0, 0, 0];
+  readonly #changeNotifier = new ChangeNotifier(this);
   readonly position: Vector = [0, 0, 0];
   readonly blockers?: List<ICollisionDetector>;
 
-  constructor({ blockers }: Props = {}, onChange?: (dx: number, dy: number, dz: number) => void) {
+  constructor({ blockers }: Props = {}) {
     this.blockers = blockers;
-    if (onChange) {
-      this.onChange(onChange);
-    }
+    this.#matrix.addChangeListener({
+      onChange: () => {
+        PositionUtils.transformToPosition(this.#matrix, this.position);
+        this.#changeNotifier.onChange();
+      }
+    });
   }
 
-  onChange(listener: ChangeListener): this {
-    this.#changeListeners.add(listener);
+  addChangeListener(listener: IChangeListener<IMatrix>): this {
+    this.#changeNotifier.addChangeListener(listener);
     return this;
   }
 
-  removeChangeListener(listener: ChangeListener) {
-    this.#changeListeners.delete(listener);
+  removeChangeListener(listener: IChangeListener<IMatrix>) {
+    this.#changeNotifier.removeChangeListener(listener);
   }
 
-  private changedPosition(dx: number, dy: number, dz: number) {
-    PositionUtils.transformToPosition(this.#matrix, this.position);
-    for (let listener of this.#changeListeners) {
-      listener(dx, dy, dz);
-    }
-  }
-
-  moveBy(x: number, y: number, z: number, turnMatrix?: IMatrix) {
-    const vector = Matrix.getMoveVector(x, y, z, turnMatrix);
+  moveBy(dx: number, dy: number, dz: number, turnMatrix?: IMatrix) {
+    const vector = Matrix.getMoveVector(dx, dy, dz, turnMatrix);
     const blocked = any(this.blockers, blocker => blocker.isBlocked(PositionUtils.toVector(
       this.position[0] + vector[0],
       this.position[1] + vector[1],
@@ -53,7 +49,6 @@ export class PositionMatrix implements IPositionMatrix {
     if (!blocked) {
       if (vector[0] || vector[1] || vector[2]) {
         this.#matrix.move(vector);
-        this.changedPosition(x, y, z);
       } else {
         return MoveResult.AT_POSITION;
       }
@@ -69,9 +64,7 @@ export class PositionMatrix implements IPositionMatrix {
     if (!blocked) {
       const [curX, curY, curZ] = this.#matrix.getPosition();
       if (curX !== x || curY !== y || curZ !== z) {
-        const dx = x - curX, dy = y - curY, dz = z - curZ;
         this.#matrix.setPosition(x, y, z);
-        this.changedPosition(dx, dy, dz);
       }
     }
     return blocked ? MoveResult.BLOCKED : MoveResult.MOVED;;
