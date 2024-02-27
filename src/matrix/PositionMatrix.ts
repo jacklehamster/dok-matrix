@@ -75,7 +75,7 @@ export class PositionMatrix implements IPositionMatrix {
     return this;
   }
 
-  gotoPos(x: number, y: number, z: number, speed: number = .1): MoveResult {
+  moveTowards(x: number, y: number, z: number, speed: number = .1): MoveResult {
     const curPos = this.position;
     const dx = x - curPos[0];
     const dy = y - curPos[1];

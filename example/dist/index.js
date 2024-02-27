@@ -1514,7 +1514,7 @@ class t0 {
   movedTo(B, K, W) {
     return this.moveTo(B, K, W), this;
   }
-  gotoPos(B, K, W, X = 0.1) {
+  moveTowards(B, K, W, X = 0.1) {
     const Y = this.position, $ = B - Y[0], Q = K - Y[1], Z = W - Y[2], O = Math.sqrt($ * $ + Q * Q + Z * Z);
     if (O > 0.01) {
       const G = Math.min(O, X);
