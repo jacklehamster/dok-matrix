@@ -89,6 +89,20 @@ export class PositionMatrix implements IPositionMatrix {
     }
   }
 
+  attemptMoveTowards(x: number, y: number, z: number, speed: number = .1): MoveResult {
+    let moveResult = this.moveTowards(x, y, z, speed);
+    if (moveResult === MoveResult.BLOCKED && x !== this.position[0]) {
+      moveResult = this.moveTowards(x, this.position[1], this.position[2], speed);
+    }
+    if (moveResult === MoveResult.BLOCKED && y !== this.position[1]) {
+      moveResult = this.moveTowards(this.position[0], y, this.position[2], speed);
+    }
+    if (moveResult === MoveResult.BLOCKED && z) {
+      moveResult = this.moveTowards(this.position[0], this.position[1], z, speed);
+    }
+    return moveResult;
+  }
+
   getMatrix(): Float32Array {
     return this.#matrix.getMatrix();
   }
