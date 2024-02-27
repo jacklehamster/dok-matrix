@@ -82,12 +82,8 @@ export class PositionMatrix implements IPositionMatrix {
     const dz = z - curPos[2];
     const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
     if (dist > .01) {
-      const sp = Math.min(dist, speed);
-      return this.moveBy(
-        dx / dist * sp,
-        dy / dist * sp,
-        dz / dist * sp,
-      );
+      const sp = Math.min(dist, speed) / dist;
+      return this.moveBy(dx * sp, dy * sp, dz * sp);
     } else {
       return this.moveTo(x, y, z);
     }

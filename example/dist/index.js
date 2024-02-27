@@ -1517,8 +1517,8 @@ class t0 {
   moveTowards(B, K, W, X = 0.1) {
     const Y = this.position, $ = B - Y[0], Q = K - Y[1], Z = W - Y[2], O = Math.sqrt($ * $ + Q * Q + Z * Z);
     if (O > 0.01) {
-      const G = Math.min(O, X);
-      return this.moveBy($ / O * G, Q / O * G, Z / O * G);
+      const G = Math.min(O, X) / O;
+      return this.moveBy($ * G, Q * G, Z * G);
     } else
       return this.moveTo(B, K, W);
   }
