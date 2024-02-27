@@ -1,579 +1,586 @@
 // /Users/vincent/dok-matrix/example/node_modules/dok-matrix/dist/index.js
-var O0 = function() {
-  var K = new _(9);
+var G0 = function() {
+  var B = new _(9);
   if (_ != Float32Array)
-    K[1] = 0, K[2] = 0, K[3] = 0, K[5] = 0, K[6] = 0, K[7] = 0;
-  return K[0] = 1, K[4] = 1, K[8] = 1, K;
+    B[1] = 0, B[2] = 0, B[3] = 0, B[5] = 0, B[6] = 0, B[7] = 0;
+  return B[0] = 1, B[4] = 1, B[8] = 1, B;
 };
-var XK = function() {
+var XB = function() {
+  var B = new _(16);
+  if (_ != Float32Array)
+    B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[6] = 0, B[7] = 0, B[8] = 0, B[9] = 0, B[11] = 0, B[12] = 0, B[13] = 0, B[14] = 0;
+  return B[0] = 1, B[5] = 1, B[10] = 1, B[15] = 1, B;
+};
+var YB = function(B) {
   var K = new _(16);
-  if (_ != Float32Array)
-    K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[6] = 0, K[7] = 0, K[8] = 0, K[9] = 0, K[11] = 0, K[12] = 0, K[13] = 0, K[14] = 0;
-  return K[0] = 1, K[5] = 1, K[10] = 1, K[15] = 1, K;
+  return K[0] = B[0], K[1] = B[1], K[2] = B[2], K[3] = B[3], K[4] = B[4], K[5] = B[5], K[6] = B[6], K[7] = B[7], K[8] = B[8], K[9] = B[9], K[10] = B[10], K[11] = B[11], K[12] = B[12], K[13] = B[13], K[14] = B[14], K[15] = B[15], K;
 };
-var YK = function(K) {
-  var W = new _(16);
-  return W[0] = K[0], W[1] = K[1], W[2] = K[2], W[3] = K[3], W[4] = K[4], W[5] = K[5], W[6] = K[6], W[7] = K[7], W[8] = K[8], W[9] = K[9], W[10] = K[10], W[11] = K[11], W[12] = K[12], W[13] = K[13], W[14] = K[14], W[15] = K[15], W;
+var $B = function(B, K) {
+  return B[0] = K[0], B[1] = K[1], B[2] = K[2], B[3] = K[3], B[4] = K[4], B[5] = K[5], B[6] = K[6], B[7] = K[7], B[8] = K[8], B[9] = K[9], B[10] = K[10], B[11] = K[11], B[12] = K[12], B[13] = K[13], B[14] = K[14], B[15] = K[15], B;
 };
-var $K = function(K, W) {
-  return K[0] = W[0], K[1] = W[1], K[2] = W[2], K[3] = W[3], K[4] = W[4], K[5] = W[5], K[6] = W[6], K[7] = W[7], K[8] = W[8], K[9] = W[9], K[10] = W[10], K[11] = W[11], K[12] = W[12], K[13] = W[13], K[14] = W[14], K[15] = W[15], K;
-};
-var BK = function(K, W, X, Y, $, B, Q, Z, O, G, H, L, C, V, D, E) {
+var QB = function(B, K, W, X, Y, $, Q, Z, O, G, H, L, C, V, E, U) {
   var J = new _(16);
-  return J[0] = K, J[1] = W, J[2] = X, J[3] = Y, J[4] = $, J[5] = B, J[6] = Q, J[7] = Z, J[8] = O, J[9] = G, J[10] = H, J[11] = L, J[12] = C, J[13] = V, J[14] = D, J[15] = E, J;
+  return J[0] = B, J[1] = K, J[2] = W, J[3] = X, J[4] = Y, J[5] = $, J[6] = Q, J[7] = Z, J[8] = O, J[9] = G, J[10] = H, J[11] = L, J[12] = C, J[13] = V, J[14] = E, J[15] = U, J;
 };
-var QK = function(K, W, X, Y, $, B, Q, Z, O, G, H, L, C, V, D, E, J) {
-  return K[0] = W, K[1] = X, K[2] = Y, K[3] = $, K[4] = B, K[5] = Q, K[6] = Z, K[7] = O, K[8] = G, K[9] = H, K[10] = L, K[11] = C, K[12] = V, K[13] = D, K[14] = E, K[15] = J, K;
+var ZB = function(B, K, W, X, Y, $, Q, Z, O, G, H, L, C, V, E, U, J) {
+  return B[0] = K, B[1] = W, B[2] = X, B[3] = Y, B[4] = $, B[5] = Q, B[6] = Z, B[7] = O, B[8] = G, B[9] = H, B[10] = L, B[11] = C, B[12] = V, B[13] = E, B[14] = U, B[15] = J, B;
 };
-var G0 = function(K) {
-  return K[0] = 1, K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[5] = 1, K[6] = 0, K[7] = 0, K[8] = 0, K[9] = 0, K[10] = 1, K[11] = 0, K[12] = 0, K[13] = 0, K[14] = 0, K[15] = 1, K;
+var H0 = function(B) {
+  return B[0] = 1, B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[5] = 1, B[6] = 0, B[7] = 0, B[8] = 0, B[9] = 0, B[10] = 1, B[11] = 0, B[12] = 0, B[13] = 0, B[14] = 0, B[15] = 1, B;
 };
-var ZK = function(K, W) {
-  if (K === W) {
-    var X = W[1], Y = W[2], $ = W[3], B = W[6], Q = W[7], Z = W[11];
-    K[1] = W[4], K[2] = W[8], K[3] = W[12], K[4] = X, K[6] = W[9], K[7] = W[13], K[8] = Y, K[9] = B, K[11] = W[14], K[12] = $, K[13] = Q, K[14] = Z;
+var OB = function(B, K) {
+  if (B === K) {
+    var W = K[1], X = K[2], Y = K[3], $ = K[6], Q = K[7], Z = K[11];
+    B[1] = K[4], B[2] = K[8], B[3] = K[12], B[4] = W, B[6] = K[9], B[7] = K[13], B[8] = X, B[9] = $, B[11] = K[14], B[12] = Y, B[13] = Q, B[14] = Z;
   } else
-    K[0] = W[0], K[1] = W[4], K[2] = W[8], K[3] = W[12], K[4] = W[1], K[5] = W[5], K[6] = W[9], K[7] = W[13], K[8] = W[2], K[9] = W[6], K[10] = W[10], K[11] = W[14], K[12] = W[3], K[13] = W[7], K[14] = W[11], K[15] = W[15];
-  return K;
+    B[0] = K[0], B[1] = K[4], B[2] = K[8], B[3] = K[12], B[4] = K[1], B[5] = K[5], B[6] = K[9], B[7] = K[13], B[8] = K[2], B[9] = K[6], B[10] = K[10], B[11] = K[14], B[12] = K[3], B[13] = K[7], B[14] = K[11], B[15] = K[15];
+  return B;
 };
-var OK = function(K, W) {
-  var X = W[0], Y = W[1], $ = W[2], B = W[3], Q = W[4], Z = W[5], O = W[6], G = W[7], H = W[8], L = W[9], C = W[10], V = W[11], D = W[12], E = W[13], J = W[14], I = W[15], N = X * Z - Y * Q, R = X * O - $ * Q, A = X * G - B * Q, U = Y * O - $ * Z, P = Y * G - B * Z, F = $ * G - B * O, j = H * E - L * D, h = H * J - C * D, M = H * I - V * D, p = L * J - C * E, g = L * I - V * E, q = C * I - V * J, k = N * q - R * g + A * p + U * M - P * h + F * j;
-  if (!k)
+var GB = function(B, K) {
+  var W = K[0], X = K[1], Y = K[2], $ = K[3], Q = K[4], Z = K[5], O = K[6], G = K[7], H = K[8], L = K[9], C = K[10], V = K[11], E = K[12], U = K[13], J = K[14], I = K[15], R = W * Z - X * Q, k = W * O - Y * Q, A = W * G - $ * Q, D = X * O - Y * Z, P = X * G - $ * Z, F = Y * G - $ * O, j = H * U - L * E, h = H * J - C * E, M = H * I - V * E, p = L * J - C * U, g = L * I - V * U, q = C * I - V * J, S = R * q - k * g + A * p + D * M - P * h + F * j;
+  if (!S)
     return null;
-  return k = 1 / k, K[0] = (Z * q - O * g + G * p) * k, K[1] = ($ * g - Y * q - B * p) * k, K[2] = (E * F - J * P + I * U) * k, K[3] = (C * P - L * F - V * U) * k, K[4] = (O * M - Q * q - G * h) * k, K[5] = (X * q - $ * M + B * h) * k, K[6] = (J * A - D * F - I * R) * k, K[7] = (H * F - C * A + V * R) * k, K[8] = (Q * g - Z * M + G * j) * k, K[9] = (Y * M - X * g - B * j) * k, K[10] = (D * P - E * A + I * N) * k, K[11] = (L * A - H * P - V * N) * k, K[12] = (Z * h - Q * p - O * j) * k, K[13] = (X * p - Y * h + $ * j) * k, K[14] = (E * R - D * U - J * N) * k, K[15] = (H * U - L * R + C * N) * k, K;
+  return S = 1 / S, B[0] = (Z * q - O * g + G * p) * S, B[1] = (Y * g - X * q - $ * p) * S, B[2] = (U * F - J * P + I * D) * S, B[3] = (C * P - L * F - V * D) * S, B[4] = (O * M - Q * q - G * h) * S, B[5] = (W * q - Y * M + $ * h) * S, B[6] = (J * A - E * F - I * k) * S, B[7] = (H * F - C * A + V * k) * S, B[8] = (Q * g - Z * M + G * j) * S, B[9] = (X * M - W * g - $ * j) * S, B[10] = (E * P - U * A + I * R) * S, B[11] = (L * A - H * P - V * R) * S, B[12] = (Z * h - Q * p - O * j) * S, B[13] = (W * p - X * h + Y * j) * S, B[14] = (U * k - E * D - J * R) * S, B[15] = (H * D - L * k + C * R) * S, B;
 };
-var GK = function(K, W) {
-  var X = W[0], Y = W[1], $ = W[2], B = W[3], Q = W[4], Z = W[5], O = W[6], G = W[7], H = W[8], L = W[9], C = W[10], V = W[11], D = W[12], E = W[13], J = W[14], I = W[15];
-  return K[0] = Z * (C * I - V * J) - L * (O * I - G * J) + E * (O * V - G * C), K[1] = -(Y * (C * I - V * J) - L * ($ * I - B * J) + E * ($ * V - B * C)), K[2] = Y * (O * I - G * J) - Z * ($ * I - B * J) + E * ($ * G - B * O), K[3] = -(Y * (O * V - G * C) - Z * ($ * V - B * C) + L * ($ * G - B * O)), K[4] = -(Q * (C * I - V * J) - H * (O * I - G * J) + D * (O * V - G * C)), K[5] = X * (C * I - V * J) - H * ($ * I - B * J) + D * ($ * V - B * C), K[6] = -(X * (O * I - G * J) - Q * ($ * I - B * J) + D * ($ * G - B * O)), K[7] = X * (O * V - G * C) - Q * ($ * V - B * C) + H * ($ * G - B * O), K[8] = Q * (L * I - V * E) - H * (Z * I - G * E) + D * (Z * V - G * L), K[9] = -(X * (L * I - V * E) - H * (Y * I - B * E) + D * (Y * V - B * L)), K[10] = X * (Z * I - G * E) - Q * (Y * I - B * E) + D * (Y * G - B * Z), K[11] = -(X * (Z * V - G * L) - Q * (Y * V - B * L) + H * (Y * G - B * Z)), K[12] = -(Q * (L * J - C * E) - H * (Z * J - O * E) + D * (Z * C - O * L)), K[13] = X * (L * J - C * E) - H * (Y * J - $ * E) + D * (Y * C - $ * L), K[14] = -(X * (Z * J - O * E) - Q * (Y * J - $ * E) + D * (Y * O - $ * Z)), K[15] = X * (Z * C - O * L) - Q * (Y * C - $ * L) + H * (Y * O - $ * Z), K;
+var HB = function(B, K) {
+  var W = K[0], X = K[1], Y = K[2], $ = K[3], Q = K[4], Z = K[5], O = K[6], G = K[7], H = K[8], L = K[9], C = K[10], V = K[11], E = K[12], U = K[13], J = K[14], I = K[15];
+  return B[0] = Z * (C * I - V * J) - L * (O * I - G * J) + U * (O * V - G * C), B[1] = -(X * (C * I - V * J) - L * (Y * I - $ * J) + U * (Y * V - $ * C)), B[2] = X * (O * I - G * J) - Z * (Y * I - $ * J) + U * (Y * G - $ * O), B[3] = -(X * (O * V - G * C) - Z * (Y * V - $ * C) + L * (Y * G - $ * O)), B[4] = -(Q * (C * I - V * J) - H * (O * I - G * J) + E * (O * V - G * C)), B[5] = W * (C * I - V * J) - H * (Y * I - $ * J) + E * (Y * V - $ * C), B[6] = -(W * (O * I - G * J) - Q * (Y * I - $ * J) + E * (Y * G - $ * O)), B[7] = W * (O * V - G * C) - Q * (Y * V - $ * C) + H * (Y * G - $ * O), B[8] = Q * (L * I - V * U) - H * (Z * I - G * U) + E * (Z * V - G * L), B[9] = -(W * (L * I - V * U) - H * (X * I - $ * U) + E * (X * V - $ * L)), B[10] = W * (Z * I - G * U) - Q * (X * I - $ * U) + E * (X * G - $ * Z), B[11] = -(W * (Z * V - G * L) - Q * (X * V - $ * L) + H * (X * G - $ * Z)), B[12] = -(Q * (L * J - C * U) - H * (Z * J - O * U) + E * (Z * C - O * L)), B[13] = W * (L * J - C * U) - H * (X * J - Y * U) + E * (X * C - Y * L), B[14] = -(W * (Z * J - O * U) - Q * (X * J - Y * U) + E * (X * O - Y * Z)), B[15] = W * (Z * C - O * L) - Q * (X * C - Y * L) + H * (X * O - Y * Z), B;
 };
-var HK = function(K) {
-  var W = K[0], X = K[1], Y = K[2], $ = K[3], B = K[4], Q = K[5], Z = K[6], O = K[7], G = K[8], H = K[9], L = K[10], C = K[11], V = K[12], D = K[13], E = K[14], J = K[15], I = W * Q - X * B, N = W * Z - Y * B, R = W * O - $ * B, A = X * Z - Y * Q, U = X * O - $ * Q, P = Y * O - $ * Z, F = G * D - H * V, j = G * E - L * V, h = G * J - C * V, M = H * E - L * D, p = H * J - C * D, g = L * J - C * E;
-  return I * g - N * p + R * M + A * h - U * j + P * F;
+var JB = function(B) {
+  var K = B[0], W = B[1], X = B[2], Y = B[3], $ = B[4], Q = B[5], Z = B[6], O = B[7], G = B[8], H = B[9], L = B[10], C = B[11], V = B[12], E = B[13], U = B[14], J = B[15], I = K * Q - W * $, R = K * Z - X * $, k = K * O - Y * $, A = W * Z - X * Q, D = W * O - Y * Q, P = X * O - Y * Z, F = G * E - H * V, j = G * U - L * V, h = G * J - C * V, M = H * U - L * E, p = H * J - C * E, g = L * J - C * U;
+  return I * g - R * p + k * M + A * h - D * j + P * F;
 };
-var H0 = function(K, W, X) {
-  var Y = W[0], $ = W[1], B = W[2], Q = W[3], Z = W[4], O = W[5], G = W[6], H = W[7], L = W[8], C = W[9], V = W[10], D = W[11], E = W[12], J = W[13], I = W[14], N = W[15], R = X[0], A = X[1], U = X[2], P = X[3];
-  return K[0] = R * Y + A * Z + U * L + P * E, K[1] = R * $ + A * O + U * C + P * J, K[2] = R * B + A * G + U * V + P * I, K[3] = R * Q + A * H + U * D + P * N, R = X[4], A = X[5], U = X[6], P = X[7], K[4] = R * Y + A * Z + U * L + P * E, K[5] = R * $ + A * O + U * C + P * J, K[6] = R * B + A * G + U * V + P * I, K[7] = R * Q + A * H + U * D + P * N, R = X[8], A = X[9], U = X[10], P = X[11], K[8] = R * Y + A * Z + U * L + P * E, K[9] = R * $ + A * O + U * C + P * J, K[10] = R * B + A * G + U * V + P * I, K[11] = R * Q + A * H + U * D + P * N, R = X[12], A = X[13], U = X[14], P = X[15], K[12] = R * Y + A * Z + U * L + P * E, K[13] = R * $ + A * O + U * C + P * J, K[14] = R * B + A * G + U * V + P * I, K[15] = R * Q + A * H + U * D + P * N, K;
+var J0 = function(B, K, W) {
+  var X = K[0], Y = K[1], $ = K[2], Q = K[3], Z = K[4], O = K[5], G = K[6], H = K[7], L = K[8], C = K[9], V = K[10], E = K[11], U = K[12], J = K[13], I = K[14], R = K[15], k = W[0], A = W[1], D = W[2], P = W[3];
+  return B[0] = k * X + A * Z + D * L + P * U, B[1] = k * Y + A * O + D * C + P * J, B[2] = k * $ + A * G + D * V + P * I, B[3] = k * Q + A * H + D * E + P * R, k = W[4], A = W[5], D = W[6], P = W[7], B[4] = k * X + A * Z + D * L + P * U, B[5] = k * Y + A * O + D * C + P * J, B[6] = k * $ + A * G + D * V + P * I, B[7] = k * Q + A * H + D * E + P * R, k = W[8], A = W[9], D = W[10], P = W[11], B[8] = k * X + A * Z + D * L + P * U, B[9] = k * Y + A * O + D * C + P * J, B[10] = k * $ + A * G + D * V + P * I, B[11] = k * Q + A * H + D * E + P * R, k = W[12], A = W[13], D = W[14], P = W[15], B[12] = k * X + A * Z + D * L + P * U, B[13] = k * Y + A * O + D * C + P * J, B[14] = k * $ + A * G + D * V + P * I, B[15] = k * Q + A * H + D * E + P * R, B;
 };
-var JK = function(K, W, X) {
-  var Y = X[0], $ = X[1], B = X[2], Q, Z, O, G, H, L, C, V, D, E, J, I;
-  if (W === K)
-    K[12] = W[0] * Y + W[4] * $ + W[8] * B + W[12], K[13] = W[1] * Y + W[5] * $ + W[9] * B + W[13], K[14] = W[2] * Y + W[6] * $ + W[10] * B + W[14], K[15] = W[3] * Y + W[7] * $ + W[11] * B + W[15];
+var LB = function(B, K, W) {
+  var X = W[0], Y = W[1], $ = W[2], Q, Z, O, G, H, L, C, V, E, U, J, I;
+  if (K === B)
+    B[12] = K[0] * X + K[4] * Y + K[8] * $ + K[12], B[13] = K[1] * X + K[5] * Y + K[9] * $ + K[13], B[14] = K[2] * X + K[6] * Y + K[10] * $ + K[14], B[15] = K[3] * X + K[7] * Y + K[11] * $ + K[15];
   else
-    Q = W[0], Z = W[1], O = W[2], G = W[3], H = W[4], L = W[5], C = W[6], V = W[7], D = W[8], E = W[9], J = W[10], I = W[11], K[0] = Q, K[1] = Z, K[2] = O, K[3] = G, K[4] = H, K[5] = L, K[6] = C, K[7] = V, K[8] = D, K[9] = E, K[10] = J, K[11] = I, K[12] = Q * Y + H * $ + D * B + W[12], K[13] = Z * Y + L * $ + E * B + W[13], K[14] = O * Y + C * $ + J * B + W[14], K[15] = G * Y + V * $ + I * B + W[15];
-  return K;
+    Q = K[0], Z = K[1], O = K[2], G = K[3], H = K[4], L = K[5], C = K[6], V = K[7], E = K[8], U = K[9], J = K[10], I = K[11], B[0] = Q, B[1] = Z, B[2] = O, B[3] = G, B[4] = H, B[5] = L, B[6] = C, B[7] = V, B[8] = E, B[9] = U, B[10] = J, B[11] = I, B[12] = Q * X + H * Y + E * $ + K[12], B[13] = Z * X + L * Y + U * $ + K[13], B[14] = O * X + C * Y + J * $ + K[14], B[15] = G * X + V * Y + I * $ + K[15];
+  return B;
 };
-var LK = function(K, W, X) {
-  var Y = X[0], $ = X[1], B = X[2];
-  return K[0] = W[0] * Y, K[1] = W[1] * Y, K[2] = W[2] * Y, K[3] = W[3] * Y, K[4] = W[4] * $, K[5] = W[5] * $, K[6] = W[6] * $, K[7] = W[7] * $, K[8] = W[8] * B, K[9] = W[9] * B, K[10] = W[10] * B, K[11] = W[11] * B, K[12] = W[12], K[13] = W[13], K[14] = W[14], K[15] = W[15], K;
+var VB = function(B, K, W) {
+  var X = W[0], Y = W[1], $ = W[2];
+  return B[0] = K[0] * X, B[1] = K[1] * X, B[2] = K[2] * X, B[3] = K[3] * X, B[4] = K[4] * Y, B[5] = K[5] * Y, B[6] = K[6] * Y, B[7] = K[7] * Y, B[8] = K[8] * $, B[9] = K[9] * $, B[10] = K[10] * $, B[11] = K[11] * $, B[12] = K[12], B[13] = K[13], B[14] = K[14], B[15] = K[15], B;
 };
-var VK = function(K, W, X, Y) {
-  var $ = Y[0], B = Y[1], Q = Y[2], Z = Math.hypot($, B, Q), O, G, H, L, C, V, D, E, J, I, N, R, A, U, P, F, j, h, M, p, g, q, k, f;
-  if (Z < T)
+var CB = function(B, K, W, X) {
+  var Y = X[0], $ = X[1], Q = X[2], Z = Math.hypot(Y, $, Q), O, G, H, L, C, V, E, U, J, I, R, k, A, D, P, F, j, h, M, p, g, q, S, f;
+  if (Z < N)
     return null;
-  if (Z = 1 / Z, $ *= Z, B *= Z, Q *= Z, O = Math.sin(X), G = Math.cos(X), H = 1 - G, L = W[0], C = W[1], V = W[2], D = W[3], E = W[4], J = W[5], I = W[6], N = W[7], R = W[8], A = W[9], U = W[10], P = W[11], F = $ * $ * H + G, j = B * $ * H + Q * O, h = Q * $ * H - B * O, M = $ * B * H - Q * O, p = B * B * H + G, g = Q * B * H + $ * O, q = $ * Q * H + B * O, k = B * Q * H - $ * O, f = Q * Q * H + G, K[0] = L * F + E * j + R * h, K[1] = C * F + J * j + A * h, K[2] = V * F + I * j + U * h, K[3] = D * F + N * j + P * h, K[4] = L * M + E * p + R * g, K[5] = C * M + J * p + A * g, K[6] = V * M + I * p + U * g, K[7] = D * M + N * p + P * g, K[8] = L * q + E * k + R * f, K[9] = C * q + J * k + A * f, K[10] = V * q + I * k + U * f, K[11] = D * q + N * k + P * f, W !== K)
-    K[12] = W[12], K[13] = W[13], K[14] = W[14], K[15] = W[15];
-  return K;
+  if (Z = 1 / Z, Y *= Z, $ *= Z, Q *= Z, O = Math.sin(W), G = Math.cos(W), H = 1 - G, L = K[0], C = K[1], V = K[2], E = K[3], U = K[4], J = K[5], I = K[6], R = K[7], k = K[8], A = K[9], D = K[10], P = K[11], F = Y * Y * H + G, j = $ * Y * H + Q * O, h = Q * Y * H - $ * O, M = Y * $ * H - Q * O, p = $ * $ * H + G, g = Q * $ * H + Y * O, q = Y * Q * H + $ * O, S = $ * Q * H - Y * O, f = Q * Q * H + G, B[0] = L * F + U * j + k * h, B[1] = C * F + J * j + A * h, B[2] = V * F + I * j + D * h, B[3] = E * F + R * j + P * h, B[4] = L * M + U * p + k * g, B[5] = C * M + J * p + A * g, B[6] = V * M + I * p + D * g, B[7] = E * M + R * p + P * g, B[8] = L * q + U * S + k * f, B[9] = C * q + J * S + A * f, B[10] = V * q + I * S + D * f, B[11] = E * q + R * S + P * f, K !== B)
+    B[12] = K[12], B[13] = K[13], B[14] = K[14], B[15] = K[15];
+  return B;
 };
-var CK = function(K, W, X) {
-  var Y = Math.sin(X), $ = Math.cos(X), B = W[4], Q = W[5], Z = W[6], O = W[7], G = W[8], H = W[9], L = W[10], C = W[11];
-  if (W !== K)
-    K[0] = W[0], K[1] = W[1], K[2] = W[2], K[3] = W[3], K[12] = W[12], K[13] = W[13], K[14] = W[14], K[15] = W[15];
-  return K[4] = B * $ + G * Y, K[5] = Q * $ + H * Y, K[6] = Z * $ + L * Y, K[7] = O * $ + C * Y, K[8] = G * $ - B * Y, K[9] = H * $ - Q * Y, K[10] = L * $ - Z * Y, K[11] = C * $ - O * Y, K;
+var UB = function(B, K, W) {
+  var X = Math.sin(W), Y = Math.cos(W), $ = K[4], Q = K[5], Z = K[6], O = K[7], G = K[8], H = K[9], L = K[10], C = K[11];
+  if (K !== B)
+    B[0] = K[0], B[1] = K[1], B[2] = K[2], B[3] = K[3], B[12] = K[12], B[13] = K[13], B[14] = K[14], B[15] = K[15];
+  return B[4] = $ * Y + G * X, B[5] = Q * Y + H * X, B[6] = Z * Y + L * X, B[7] = O * Y + C * X, B[8] = G * Y - $ * X, B[9] = H * Y - Q * X, B[10] = L * Y - Z * X, B[11] = C * Y - O * X, B;
 };
-var EK = function(K, W, X) {
-  var Y = Math.sin(X), $ = Math.cos(X), B = W[0], Q = W[1], Z = W[2], O = W[3], G = W[8], H = W[9], L = W[10], C = W[11];
-  if (W !== K)
-    K[4] = W[4], K[5] = W[5], K[6] = W[6], K[7] = W[7], K[12] = W[12], K[13] = W[13], K[14] = W[14], K[15] = W[15];
-  return K[0] = B * $ - G * Y, K[1] = Q * $ - H * Y, K[2] = Z * $ - L * Y, K[3] = O * $ - C * Y, K[8] = B * Y + G * $, K[9] = Q * Y + H * $, K[10] = Z * Y + L * $, K[11] = O * Y + C * $, K;
+var EB = function(B, K, W) {
+  var X = Math.sin(W), Y = Math.cos(W), $ = K[0], Q = K[1], Z = K[2], O = K[3], G = K[8], H = K[9], L = K[10], C = K[11];
+  if (K !== B)
+    B[4] = K[4], B[5] = K[5], B[6] = K[6], B[7] = K[7], B[12] = K[12], B[13] = K[13], B[14] = K[14], B[15] = K[15];
+  return B[0] = $ * Y - G * X, B[1] = Q * Y - H * X, B[2] = Z * Y - L * X, B[3] = O * Y - C * X, B[8] = $ * X + G * Y, B[9] = Q * X + H * Y, B[10] = Z * X + L * Y, B[11] = O * X + C * Y, B;
 };
-var DK = function(K, W, X) {
-  var Y = Math.sin(X), $ = Math.cos(X), B = W[0], Q = W[1], Z = W[2], O = W[3], G = W[4], H = W[5], L = W[6], C = W[7];
-  if (W !== K)
-    K[8] = W[8], K[9] = W[9], K[10] = W[10], K[11] = W[11], K[12] = W[12], K[13] = W[13], K[14] = W[14], K[15] = W[15];
-  return K[0] = B * $ + G * Y, K[1] = Q * $ + H * Y, K[2] = Z * $ + L * Y, K[3] = O * $ + C * Y, K[4] = G * $ - B * Y, K[5] = H * $ - Q * Y, K[6] = L * $ - Z * Y, K[7] = C * $ - O * Y, K;
+var IB = function(B, K, W) {
+  var X = Math.sin(W), Y = Math.cos(W), $ = K[0], Q = K[1], Z = K[2], O = K[3], G = K[4], H = K[5], L = K[6], C = K[7];
+  if (K !== B)
+    B[8] = K[8], B[9] = K[9], B[10] = K[10], B[11] = K[11], B[12] = K[12], B[13] = K[13], B[14] = K[14], B[15] = K[15];
+  return B[0] = $ * Y + G * X, B[1] = Q * Y + H * X, B[2] = Z * Y + L * X, B[3] = O * Y + C * X, B[4] = G * Y - $ * X, B[5] = H * Y - Q * X, B[6] = L * Y - Z * X, B[7] = C * Y - O * X, B;
 };
-var IK = function(K, W) {
-  return K[0] = 1, K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[5] = 1, K[6] = 0, K[7] = 0, K[8] = 0, K[9] = 0, K[10] = 1, K[11] = 0, K[12] = W[0], K[13] = W[1], K[14] = W[2], K[15] = 1, K;
+var DB = function(B, K) {
+  return B[0] = 1, B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[5] = 1, B[6] = 0, B[7] = 0, B[8] = 0, B[9] = 0, B[10] = 1, B[11] = 0, B[12] = K[0], B[13] = K[1], B[14] = K[2], B[15] = 1, B;
 };
-var UK = function(K, W) {
-  return K[0] = W[0], K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[5] = W[1], K[6] = 0, K[7] = 0, K[8] = 0, K[9] = 0, K[10] = W[2], K[11] = 0, K[12] = 0, K[13] = 0, K[14] = 0, K[15] = 1, K;
+var PB = function(B, K) {
+  return B[0] = K[0], B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[5] = K[1], B[6] = 0, B[7] = 0, B[8] = 0, B[9] = 0, B[10] = K[2], B[11] = 0, B[12] = 0, B[13] = 0, B[14] = 0, B[15] = 1, B;
 };
-var PK = function(K, W, X) {
-  var Y = X[0], $ = X[1], B = X[2], Q = Math.hypot(Y, $, B), Z, O, G;
-  if (Q < T)
+var AB = function(B, K, W) {
+  var X = W[0], Y = W[1], $ = W[2], Q = Math.hypot(X, Y, $), Z, O, G;
+  if (Q < N)
     return null;
-  return Q = 1 / Q, Y *= Q, $ *= Q, B *= Q, Z = Math.sin(W), O = Math.cos(W), G = 1 - O, K[0] = Y * Y * G + O, K[1] = $ * Y * G + B * Z, K[2] = B * Y * G - $ * Z, K[3] = 0, K[4] = Y * $ * G - B * Z, K[5] = $ * $ * G + O, K[6] = B * $ * G + Y * Z, K[7] = 0, K[8] = Y * B * G + $ * Z, K[9] = $ * B * G - Y * Z, K[10] = B * B * G + O, K[11] = 0, K[12] = 0, K[13] = 0, K[14] = 0, K[15] = 1, K;
+  return Q = 1 / Q, X *= Q, Y *= Q, $ *= Q, Z = Math.sin(K), O = Math.cos(K), G = 1 - O, B[0] = X * X * G + O, B[1] = Y * X * G + $ * Z, B[2] = $ * X * G - Y * Z, B[3] = 0, B[4] = X * Y * G - $ * Z, B[5] = Y * Y * G + O, B[6] = $ * Y * G + X * Z, B[7] = 0, B[8] = X * $ * G + Y * Z, B[9] = Y * $ * G - X * Z, B[10] = $ * $ * G + O, B[11] = 0, B[12] = 0, B[13] = 0, B[14] = 0, B[15] = 1, B;
 };
-var AK = function(K, W) {
-  var X = Math.sin(W), Y = Math.cos(W);
-  return K[0] = 1, K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[5] = Y, K[6] = X, K[7] = 0, K[8] = 0, K[9] = -X, K[10] = Y, K[11] = 0, K[12] = 0, K[13] = 0, K[14] = 0, K[15] = 1, K;
+var kB = function(B, K) {
+  var W = Math.sin(K), X = Math.cos(K);
+  return B[0] = 1, B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[5] = X, B[6] = W, B[7] = 0, B[8] = 0, B[9] = -W, B[10] = X, B[11] = 0, B[12] = 0, B[13] = 0, B[14] = 0, B[15] = 1, B;
 };
-var RK = function(K, W) {
-  var X = Math.sin(W), Y = Math.cos(W);
-  return K[0] = Y, K[1] = 0, K[2] = -X, K[3] = 0, K[4] = 0, K[5] = 1, K[6] = 0, K[7] = 0, K[8] = X, K[9] = 0, K[10] = Y, K[11] = 0, K[12] = 0, K[13] = 0, K[14] = 0, K[15] = 1, K;
+var NB = function(B, K) {
+  var W = Math.sin(K), X = Math.cos(K);
+  return B[0] = X, B[1] = 0, B[2] = -W, B[3] = 0, B[4] = 0, B[5] = 1, B[6] = 0, B[7] = 0, B[8] = W, B[9] = 0, B[10] = X, B[11] = 0, B[12] = 0, B[13] = 0, B[14] = 0, B[15] = 1, B;
 };
-var TK = function(K, W) {
-  var X = Math.sin(W), Y = Math.cos(W);
-  return K[0] = Y, K[1] = X, K[2] = 0, K[3] = 0, K[4] = -X, K[5] = Y, K[6] = 0, K[7] = 0, K[8] = 0, K[9] = 0, K[10] = 1, K[11] = 0, K[12] = 0, K[13] = 0, K[14] = 0, K[15] = 1, K;
+var RB = function(B, K) {
+  var W = Math.sin(K), X = Math.cos(K);
+  return B[0] = X, B[1] = W, B[2] = 0, B[3] = 0, B[4] = -W, B[5] = X, B[6] = 0, B[7] = 0, B[8] = 0, B[9] = 0, B[10] = 1, B[11] = 0, B[12] = 0, B[13] = 0, B[14] = 0, B[15] = 1, B;
 };
-var J0 = function(K, W, X) {
-  var Y = W[0], $ = W[1], B = W[2], Q = W[3], Z = Y + Y, O = $ + $, G = B + B, H = Y * Z, L = Y * O, C = Y * G, V = $ * O, D = $ * G, E = B * G, J = Q * Z, I = Q * O, N = Q * G;
-  return K[0] = 1 - (V + E), K[1] = L + N, K[2] = C - I, K[3] = 0, K[4] = L - N, K[5] = 1 - (H + E), K[6] = D + J, K[7] = 0, K[8] = C + I, K[9] = D - J, K[10] = 1 - (H + V), K[11] = 0, K[12] = X[0], K[13] = X[1], K[14] = X[2], K[15] = 1, K;
+var L0 = function(B, K, W) {
+  var X = K[0], Y = K[1], $ = K[2], Q = K[3], Z = X + X, O = Y + Y, G = $ + $, H = X * Z, L = X * O, C = X * G, V = Y * O, E = Y * G, U = $ * G, J = Q * Z, I = Q * O, R = Q * G;
+  return B[0] = 1 - (V + U), B[1] = L + R, B[2] = C - I, B[3] = 0, B[4] = L - R, B[5] = 1 - (H + U), B[6] = E + J, B[7] = 0, B[8] = C + I, B[9] = E - J, B[10] = 1 - (H + V), B[11] = 0, B[12] = W[0], B[13] = W[1], B[14] = W[2], B[15] = 1, B;
 };
-var NK = function(K, W) {
-  var X = new _(3), Y = -W[0], $ = -W[1], B = -W[2], Q = W[3], Z = W[4], O = W[5], G = W[6], H = W[7], L = Y * Y + $ * $ + B * B + Q * Q;
+var SB = function(B, K) {
+  var W = new _(3), X = -K[0], Y = -K[1], $ = -K[2], Q = K[3], Z = K[4], O = K[5], G = K[6], H = K[7], L = X * X + Y * Y + $ * $ + Q * Q;
   if (L > 0)
-    X[0] = (Z * Q + H * Y + O * B - G * $) * 2 / L, X[1] = (O * Q + H * $ + G * Y - Z * B) * 2 / L, X[2] = (G * Q + H * B + Z * $ - O * Y) * 2 / L;
+    W[0] = (Z * Q + H * X + O * $ - G * Y) * 2 / L, W[1] = (O * Q + H * Y + G * X - Z * $) * 2 / L, W[2] = (G * Q + H * $ + Z * Y - O * X) * 2 / L;
   else
-    X[0] = (Z * Q + H * Y + O * B - G * $) * 2, X[1] = (O * Q + H * $ + G * Y - Z * B) * 2, X[2] = (G * Q + H * B + Z * $ - O * Y) * 2;
-  return J0(K, W, X), K;
+    W[0] = (Z * Q + H * X + O * $ - G * Y) * 2, W[1] = (O * Q + H * Y + G * X - Z * $) * 2, W[2] = (G * Q + H * $ + Z * Y - O * X) * 2;
+  return L0(B, K, W), B;
 };
-var kK = function(K, W) {
-  return K[0] = W[12], K[1] = W[13], K[2] = W[14], K;
+var TB = function(B, K) {
+  return B[0] = K[12], B[1] = K[13], B[2] = K[14], B;
 };
-var L0 = function(K, W) {
-  var X = W[0], Y = W[1], $ = W[2], B = W[4], Q = W[5], Z = W[6], O = W[8], G = W[9], H = W[10];
-  return K[0] = Math.hypot(X, Y, $), K[1] = Math.hypot(B, Q, Z), K[2] = Math.hypot(O, G, H), K;
+var V0 = function(B, K) {
+  var W = K[0], X = K[1], Y = K[2], $ = K[4], Q = K[5], Z = K[6], O = K[8], G = K[9], H = K[10];
+  return B[0] = Math.hypot(W, X, Y), B[1] = Math.hypot($, Q, Z), B[2] = Math.hypot(O, G, H), B;
 };
-var SK = function(K, W) {
-  var X = new _(3);
-  L0(X, W);
-  var Y = 1 / X[0], $ = 1 / X[1], B = 1 / X[2], Q = W[0] * Y, Z = W[1] * $, O = W[2] * B, G = W[4] * Y, H = W[5] * $, L = W[6] * B, C = W[8] * Y, V = W[9] * $, D = W[10] * B, E = Q + H + D, J = 0;
-  if (E > 0)
-    J = Math.sqrt(E + 1) * 2, K[3] = 0.25 * J, K[0] = (L - V) / J, K[1] = (C - O) / J, K[2] = (Z - G) / J;
-  else if (Q > H && Q > D)
-    J = Math.sqrt(1 + Q - H - D) * 2, K[3] = (L - V) / J, K[0] = 0.25 * J, K[1] = (Z + G) / J, K[2] = (C + O) / J;
-  else if (H > D)
-    J = Math.sqrt(1 + H - Q - D) * 2, K[3] = (C - O) / J, K[0] = (Z + G) / J, K[1] = 0.25 * J, K[2] = (L + V) / J;
+var _B = function(B, K) {
+  var W = new _(3);
+  V0(W, K);
+  var X = 1 / W[0], Y = 1 / W[1], $ = 1 / W[2], Q = K[0] * X, Z = K[1] * Y, O = K[2] * $, G = K[4] * X, H = K[5] * Y, L = K[6] * $, C = K[8] * X, V = K[9] * Y, E = K[10] * $, U = Q + H + E, J = 0;
+  if (U > 0)
+    J = Math.sqrt(U + 1) * 2, B[3] = 0.25 * J, B[0] = (L - V) / J, B[1] = (C - O) / J, B[2] = (Z - G) / J;
+  else if (Q > H && Q > E)
+    J = Math.sqrt(1 + Q - H - E) * 2, B[3] = (L - V) / J, B[0] = 0.25 * J, B[1] = (Z + G) / J, B[2] = (C + O) / J;
+  else if (H > E)
+    J = Math.sqrt(1 + H - Q - E) * 2, B[3] = (C - O) / J, B[0] = (Z + G) / J, B[1] = 0.25 * J, B[2] = (L + V) / J;
   else
-    J = Math.sqrt(1 + D - Q - H) * 2, K[3] = (Z - G) / J, K[0] = (C + O) / J, K[1] = (L + V) / J, K[2] = 0.25 * J;
-  return K;
+    J = Math.sqrt(1 + E - Q - H) * 2, B[3] = (Z - G) / J, B[0] = (C + O) / J, B[1] = (L + V) / J, B[2] = 0.25 * J;
+  return B;
 };
-var _K = function(K, W, X, Y) {
-  var $ = W[0], B = W[1], Q = W[2], Z = W[3], O = $ + $, G = B + B, H = Q + Q, L = $ * O, C = $ * G, V = $ * H, D = B * G, E = B * H, J = Q * H, I = Z * O, N = Z * G, R = Z * H, A = Y[0], U = Y[1], P = Y[2];
-  return K[0] = (1 - (D + J)) * A, K[1] = (C + R) * A, K[2] = (V - N) * A, K[3] = 0, K[4] = (C - R) * U, K[5] = (1 - (L + J)) * U, K[6] = (E + I) * U, K[7] = 0, K[8] = (V + N) * P, K[9] = (E - I) * P, K[10] = (1 - (L + D)) * P, K[11] = 0, K[12] = X[0], K[13] = X[1], K[14] = X[2], K[15] = 1, K;
+var jB = function(B, K, W, X) {
+  var Y = K[0], $ = K[1], Q = K[2], Z = K[3], O = Y + Y, G = $ + $, H = Q + Q, L = Y * O, C = Y * G, V = Y * H, E = $ * G, U = $ * H, J = Q * H, I = Z * O, R = Z * G, k = Z * H, A = X[0], D = X[1], P = X[2];
+  return B[0] = (1 - (E + J)) * A, B[1] = (C + k) * A, B[2] = (V - R) * A, B[3] = 0, B[4] = (C - k) * D, B[5] = (1 - (L + J)) * D, B[6] = (U + I) * D, B[7] = 0, B[8] = (V + R) * P, B[9] = (U - I) * P, B[10] = (1 - (L + E)) * P, B[11] = 0, B[12] = W[0], B[13] = W[1], B[14] = W[2], B[15] = 1, B;
 };
-var jK = function(K, W, X, Y, $) {
-  var B = W[0], Q = W[1], Z = W[2], O = W[3], G = B + B, H = Q + Q, L = Z + Z, C = B * G, V = B * H, D = B * L, E = Q * H, J = Q * L, I = Z * L, N = O * G, R = O * H, A = O * L, U = Y[0], P = Y[1], F = Y[2], j = $[0], h = $[1], M = $[2], p = (1 - (E + I)) * U, g = (V + A) * U, q = (D - R) * U, k = (V - A) * P, f = (1 - (C + I)) * P, i = (J + N) * P, y = (D + R) * F, Q0 = (J - N) * F, Z0 = (1 - (C + E)) * F;
-  return K[0] = p, K[1] = g, K[2] = q, K[3] = 0, K[4] = k, K[5] = f, K[6] = i, K[7] = 0, K[8] = y, K[9] = Q0, K[10] = Z0, K[11] = 0, K[12] = X[0] + j - (p * j + k * h + y * M), K[13] = X[1] + h - (g * j + f * h + Q0 * M), K[14] = X[2] + M - (q * j + i * h + Z0 * M), K[15] = 1, K;
+var hB = function(B, K, W, X, Y) {
+  var $ = K[0], Q = K[1], Z = K[2], O = K[3], G = $ + $, H = Q + Q, L = Z + Z, C = $ * G, V = $ * H, E = $ * L, U = Q * H, J = Q * L, I = Z * L, R = O * G, k = O * H, A = O * L, D = X[0], P = X[1], F = X[2], j = Y[0], h = Y[1], M = Y[2], p = (1 - (U + I)) * D, g = (V + A) * D, q = (E - k) * D, S = (V - A) * P, f = (1 - (C + I)) * P, c = (J + R) * P, i = (E + k) * F, Z0 = (J - R) * F, O0 = (1 - (C + U)) * F;
+  return B[0] = p, B[1] = g, B[2] = q, B[3] = 0, B[4] = S, B[5] = f, B[6] = c, B[7] = 0, B[8] = i, B[9] = Z0, B[10] = O0, B[11] = 0, B[12] = W[0] + j - (p * j + S * h + i * M), B[13] = W[1] + h - (g * j + f * h + Z0 * M), B[14] = W[2] + M - (q * j + c * h + O0 * M), B[15] = 1, B;
 };
-var hK = function(K, W) {
-  var X = W[0], Y = W[1], $ = W[2], B = W[3], Q = X + X, Z = Y + Y, O = $ + $, G = X * Q, H = Y * Q, L = Y * Z, C = $ * Q, V = $ * Z, D = $ * O, E = B * Q, J = B * Z, I = B * O;
-  return K[0] = 1 - L - D, K[1] = H + I, K[2] = C - J, K[3] = 0, K[4] = H - I, K[5] = 1 - G - D, K[6] = V + E, K[7] = 0, K[8] = C + J, K[9] = V - E, K[10] = 1 - G - L, K[11] = 0, K[12] = 0, K[13] = 0, K[14] = 0, K[15] = 1, K;
+var MB = function(B, K) {
+  var W = K[0], X = K[1], Y = K[2], $ = K[3], Q = W + W, Z = X + X, O = Y + Y, G = W * Q, H = X * Q, L = X * Z, C = Y * Q, V = Y * Z, E = Y * O, U = $ * Q, J = $ * Z, I = $ * O;
+  return B[0] = 1 - L - E, B[1] = H + I, B[2] = C - J, B[3] = 0, B[4] = H - I, B[5] = 1 - G - E, B[6] = V + U, B[7] = 0, B[8] = C + J, B[9] = V - U, B[10] = 1 - G - L, B[11] = 0, B[12] = 0, B[13] = 0, B[14] = 0, B[15] = 1, B;
 };
-var MK = function(K, W, X, Y, $, B, Q) {
-  var Z = 1 / (X - W), O = 1 / ($ - Y), G = 1 / (B - Q);
-  return K[0] = B * 2 * Z, K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[5] = B * 2 * O, K[6] = 0, K[7] = 0, K[8] = (X + W) * Z, K[9] = ($ + Y) * O, K[10] = (Q + B) * G, K[11] = -1, K[12] = 0, K[13] = 0, K[14] = Q * B * 2 * G, K[15] = 0, K;
+var FB = function(B, K, W, X, Y, $, Q) {
+  var Z = 1 / (W - K), O = 1 / (Y - X), G = 1 / ($ - Q);
+  return B[0] = $ * 2 * Z, B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[5] = $ * 2 * O, B[6] = 0, B[7] = 0, B[8] = (W + K) * Z, B[9] = (Y + X) * O, B[10] = (Q + $) * G, B[11] = -1, B[12] = 0, B[13] = 0, B[14] = Q * $ * 2 * G, B[15] = 0, B;
 };
-var V0 = function(K, W, X, Y, $) {
-  var B = 1 / Math.tan(W / 2), Q;
-  if (K[0] = B / X, K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[5] = B, K[6] = 0, K[7] = 0, K[8] = 0, K[9] = 0, K[11] = -1, K[12] = 0, K[13] = 0, K[15] = 0, $ != null && $ !== Infinity)
-    Q = 1 / (Y - $), K[10] = ($ + Y) * Q, K[14] = 2 * $ * Y * Q;
+var C0 = function(B, K, W, X, Y) {
+  var $ = 1 / Math.tan(K / 2), Q;
+  if (B[0] = $ / W, B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[5] = $, B[6] = 0, B[7] = 0, B[8] = 0, B[9] = 0, B[11] = -1, B[12] = 0, B[13] = 0, B[15] = 0, Y != null && Y !== Infinity)
+    Q = 1 / (X - Y), B[10] = (Y + X) * Q, B[14] = 2 * Y * X * Q;
   else
-    K[10] = -1, K[14] = -2 * Y;
-  return K;
+    B[10] = -1, B[14] = -2 * X;
+  return B;
 };
-var pK = function(K, W, X, Y, $) {
-  var B = 1 / Math.tan(W / 2), Q;
-  if (K[0] = B / X, K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[5] = B, K[6] = 0, K[7] = 0, K[8] = 0, K[9] = 0, K[11] = -1, K[12] = 0, K[13] = 0, K[15] = 0, $ != null && $ !== Infinity)
-    Q = 1 / (Y - $), K[10] = $ * Q, K[14] = $ * Y * Q;
+var gB = function(B, K, W, X, Y) {
+  var $ = 1 / Math.tan(K / 2), Q;
+  if (B[0] = $ / W, B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[5] = $, B[6] = 0, B[7] = 0, B[8] = 0, B[9] = 0, B[11] = -1, B[12] = 0, B[13] = 0, B[15] = 0, Y != null && Y !== Infinity)
+    Q = 1 / (X - Y), B[10] = Y * Q, B[14] = Y * X * Q;
   else
-    K[10] = -1, K[14] = -Y;
-  return K;
+    B[10] = -1, B[14] = -X;
+  return B;
 };
-var gK = function(K, W, X, Y) {
-  var $ = Math.tan(W.upDegrees * Math.PI / 180), B = Math.tan(W.downDegrees * Math.PI / 180), Q = Math.tan(W.leftDegrees * Math.PI / 180), Z = Math.tan(W.rightDegrees * Math.PI / 180), O = 2 / (Q + Z), G = 2 / ($ + B);
-  return K[0] = O, K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[5] = G, K[6] = 0, K[7] = 0, K[8] = -((Q - Z) * O * 0.5), K[9] = ($ - B) * G * 0.5, K[10] = Y / (X - Y), K[11] = -1, K[12] = 0, K[13] = 0, K[14] = Y * X / (X - Y), K[15] = 0, K;
+var qB = function(B, K, W, X) {
+  var Y = Math.tan(K.upDegrees * Math.PI / 180), $ = Math.tan(K.downDegrees * Math.PI / 180), Q = Math.tan(K.leftDegrees * Math.PI / 180), Z = Math.tan(K.rightDegrees * Math.PI / 180), O = 2 / (Q + Z), G = 2 / (Y + $);
+  return B[0] = O, B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[5] = G, B[6] = 0, B[7] = 0, B[8] = -((Q - Z) * O * 0.5), B[9] = (Y - $) * G * 0.5, B[10] = X / (W - X), B[11] = -1, B[12] = 0, B[13] = 0, B[14] = X * W / (W - X), B[15] = 0, B;
 };
-var C0 = function(K, W, X, Y, $, B, Q) {
-  var Z = 1 / (W - X), O = 1 / (Y - $), G = 1 / (B - Q);
-  return K[0] = -2 * Z, K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[5] = -2 * O, K[6] = 0, K[7] = 0, K[8] = 0, K[9] = 0, K[10] = 2 * G, K[11] = 0, K[12] = (W + X) * Z, K[13] = ($ + Y) * O, K[14] = (Q + B) * G, K[15] = 1, K;
+var U0 = function(B, K, W, X, Y, $, Q) {
+  var Z = 1 / (K - W), O = 1 / (X - Y), G = 1 / ($ - Q);
+  return B[0] = -2 * Z, B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[5] = -2 * O, B[6] = 0, B[7] = 0, B[8] = 0, B[9] = 0, B[10] = 2 * G, B[11] = 0, B[12] = (K + W) * Z, B[13] = (Y + X) * O, B[14] = (Q + $) * G, B[15] = 1, B;
 };
-var fK = function(K, W, X, Y, $, B, Q) {
-  var Z = 1 / (W - X), O = 1 / (Y - $), G = 1 / (B - Q);
-  return K[0] = -2 * Z, K[1] = 0, K[2] = 0, K[3] = 0, K[4] = 0, K[5] = -2 * O, K[6] = 0, K[7] = 0, K[8] = 0, K[9] = 0, K[10] = G, K[11] = 0, K[12] = (W + X) * Z, K[13] = ($ + Y) * O, K[14] = B * G, K[15] = 1, K;
+var wB = function(B, K, W, X, Y, $, Q) {
+  var Z = 1 / (K - W), O = 1 / (X - Y), G = 1 / ($ - Q);
+  return B[0] = -2 * Z, B[1] = 0, B[2] = 0, B[3] = 0, B[4] = 0, B[5] = -2 * O, B[6] = 0, B[7] = 0, B[8] = 0, B[9] = 0, B[10] = G, B[11] = 0, B[12] = (K + W) * Z, B[13] = (Y + X) * O, B[14] = $ * G, B[15] = 1, B;
 };
-var wK = function(K, W, X, Y) {
-  var $, B, Q, Z, O, G, H, L, C, V, D = W[0], E = W[1], J = W[2], I = Y[0], N = Y[1], R = Y[2], A = X[0], U = X[1], P = X[2];
-  if (Math.abs(D - A) < T && Math.abs(E - U) < T && Math.abs(J - P) < T)
-    return G0(K);
-  if (H = D - A, L = E - U, C = J - P, V = 1 / Math.hypot(H, L, C), H *= V, L *= V, C *= V, $ = N * C - R * L, B = R * H - I * C, Q = I * L - N * H, V = Math.hypot($, B, Q), !V)
-    $ = 0, B = 0, Q = 0;
+var dB = function(B, K, W, X) {
+  var Y, $, Q, Z, O, G, H, L, C, V, E = K[0], U = K[1], J = K[2], I = X[0], R = X[1], k = X[2], A = W[0], D = W[1], P = W[2];
+  if (Math.abs(E - A) < N && Math.abs(U - D) < N && Math.abs(J - P) < N)
+    return H0(B);
+  if (H = E - A, L = U - D, C = J - P, V = 1 / Math.hypot(H, L, C), H *= V, L *= V, C *= V, Y = R * C - k * L, $ = k * H - I * C, Q = I * L - R * H, V = Math.hypot(Y, $, Q), !V)
+    Y = 0, $ = 0, Q = 0;
   else
-    V = 1 / V, $ *= V, B *= V, Q *= V;
-  if (Z = L * Q - C * B, O = C * $ - H * Q, G = H * B - L * $, V = Math.hypot(Z, O, G), !V)
+    V = 1 / V, Y *= V, $ *= V, Q *= V;
+  if (Z = L * Q - C * $, O = C * Y - H * Q, G = H * $ - L * Y, V = Math.hypot(Z, O, G), !V)
     Z = 0, O = 0, G = 0;
   else
     V = 1 / V, Z *= V, O *= V, G *= V;
-  return K[0] = $, K[1] = Z, K[2] = H, K[3] = 0, K[4] = B, K[5] = O, K[6] = L, K[7] = 0, K[8] = Q, K[9] = G, K[10] = C, K[11] = 0, K[12] = -($ * D + B * E + Q * J), K[13] = -(Z * D + O * E + G * J), K[14] = -(H * D + L * E + C * J), K[15] = 1, K;
+  return B[0] = Y, B[1] = Z, B[2] = H, B[3] = 0, B[4] = $, B[5] = O, B[6] = L, B[7] = 0, B[8] = Q, B[9] = G, B[10] = C, B[11] = 0, B[12] = -(Y * E + $ * U + Q * J), B[13] = -(Z * E + O * U + G * J), B[14] = -(H * E + L * U + C * J), B[15] = 1, B;
 };
-var dK = function(K, W, X, Y) {
-  var $ = W[0], B = W[1], Q = W[2], Z = Y[0], O = Y[1], G = Y[2], H = $ - X[0], L = B - X[1], C = Q - X[2], V = H * H + L * L + C * C;
+var vB = function(B, K, W, X) {
+  var Y = K[0], $ = K[1], Q = K[2], Z = X[0], O = X[1], G = X[2], H = Y - W[0], L = $ - W[1], C = Q - W[2], V = H * H + L * L + C * C;
   if (V > 0)
     V = 1 / Math.sqrt(V), H *= V, L *= V, C *= V;
-  var D = O * C - G * L, E = G * H - Z * C, J = Z * L - O * H;
-  if (V = D * D + E * E + J * J, V > 0)
-    V = 1 / Math.sqrt(V), D *= V, E *= V, J *= V;
-  return K[0] = D, K[1] = E, K[2] = J, K[3] = 0, K[4] = L * J - C * E, K[5] = C * D - H * J, K[6] = H * E - L * D, K[7] = 0, K[8] = H, K[9] = L, K[10] = C, K[11] = 0, K[12] = $, K[13] = B, K[14] = Q, K[15] = 1, K;
+  var E = O * C - G * L, U = G * H - Z * C, J = Z * L - O * H;
+  if (V = E * E + U * U + J * J, V > 0)
+    V = 1 / Math.sqrt(V), E *= V, U *= V, J *= V;
+  return B[0] = E, B[1] = U, B[2] = J, B[3] = 0, B[4] = L * J - C * U, B[5] = C * E - H * J, B[6] = H * U - L * E, B[7] = 0, B[8] = H, B[9] = L, B[10] = C, B[11] = 0, B[12] = Y, B[13] = $, B[14] = Q, B[15] = 1, B;
 };
-var vK = function(K) {
-  return "mat4(" + K[0] + ", " + K[1] + ", " + K[2] + ", " + K[3] + ", " + K[4] + ", " + K[5] + ", " + K[6] + ", " + K[7] + ", " + K[8] + ", " + K[9] + ", " + K[10] + ", " + K[11] + ", " + K[12] + ", " + K[13] + ", " + K[14] + ", " + K[15] + ")";
+var nB = function(B) {
+  return "mat4(" + B[0] + ", " + B[1] + ", " + B[2] + ", " + B[3] + ", " + B[4] + ", " + B[5] + ", " + B[6] + ", " + B[7] + ", " + B[8] + ", " + B[9] + ", " + B[10] + ", " + B[11] + ", " + B[12] + ", " + B[13] + ", " + B[14] + ", " + B[15] + ")";
 };
-var nK = function(K) {
-  return Math.hypot(K[0], K[1], K[2], K[3], K[4], K[5], K[6], K[7], K[8], K[9], K[10], K[11], K[12], K[13], K[14], K[15]);
+var lB = function(B) {
+  return Math.hypot(B[0], B[1], B[2], B[3], B[4], B[5], B[6], B[7], B[8], B[9], B[10], B[11], B[12], B[13], B[14], B[15]);
 };
-var lK = function(K, W, X) {
-  return K[0] = W[0] + X[0], K[1] = W[1] + X[1], K[2] = W[2] + X[2], K[3] = W[3] + X[3], K[4] = W[4] + X[4], K[5] = W[5] + X[5], K[6] = W[6] + X[6], K[7] = W[7] + X[7], K[8] = W[8] + X[8], K[9] = W[9] + X[9], K[10] = W[10] + X[10], K[11] = W[11] + X[11], K[12] = W[12] + X[12], K[13] = W[13] + X[13], K[14] = W[14] + X[14], K[15] = W[15] + X[15], K;
+var cB = function(B, K, W) {
+  return B[0] = K[0] + W[0], B[1] = K[1] + W[1], B[2] = K[2] + W[2], B[3] = K[3] + W[3], B[4] = K[4] + W[4], B[5] = K[5] + W[5], B[6] = K[6] + W[6], B[7] = K[7] + W[7], B[8] = K[8] + W[8], B[9] = K[9] + W[9], B[10] = K[10] + W[10], B[11] = K[11] + W[11], B[12] = K[12] + W[12], B[13] = K[13] + W[13], B[14] = K[14] + W[14], B[15] = K[15] + W[15], B;
 };
-var E0 = function(K, W, X) {
-  return K[0] = W[0] - X[0], K[1] = W[1] - X[1], K[2] = W[2] - X[2], K[3] = W[3] - X[3], K[4] = W[4] - X[4], K[5] = W[5] - X[5], K[6] = W[6] - X[6], K[7] = W[7] - X[7], K[8] = W[8] - X[8], K[9] = W[9] - X[9], K[10] = W[10] - X[10], K[11] = W[11] - X[11], K[12] = W[12] - X[12], K[13] = W[13] - X[13], K[14] = W[14] - X[14], K[15] = W[15] - X[15], K;
+var E0 = function(B, K, W) {
+  return B[0] = K[0] - W[0], B[1] = K[1] - W[1], B[2] = K[2] - W[2], B[3] = K[3] - W[3], B[4] = K[4] - W[4], B[5] = K[5] - W[5], B[6] = K[6] - W[6], B[7] = K[7] - W[7], B[8] = K[8] - W[8], B[9] = K[9] - W[9], B[10] = K[10] - W[10], B[11] = K[11] - W[11], B[12] = K[12] - W[12], B[13] = K[13] - W[13], B[14] = K[14] - W[14], B[15] = K[15] - W[15], B;
 };
-var cK = function(K, W, X) {
-  return K[0] = W[0] * X, K[1] = W[1] * X, K[2] = W[2] * X, K[3] = W[3] * X, K[4] = W[4] * X, K[5] = W[5] * X, K[6] = W[6] * X, K[7] = W[7] * X, K[8] = W[8] * X, K[9] = W[9] * X, K[10] = W[10] * X, K[11] = W[11] * X, K[12] = W[12] * X, K[13] = W[13] * X, K[14] = W[14] * X, K[15] = W[15] * X, K;
+var iB = function(B, K, W) {
+  return B[0] = K[0] * W, B[1] = K[1] * W, B[2] = K[2] * W, B[3] = K[3] * W, B[4] = K[4] * W, B[5] = K[5] * W, B[6] = K[6] * W, B[7] = K[7] * W, B[8] = K[8] * W, B[9] = K[9] * W, B[10] = K[10] * W, B[11] = K[11] * W, B[12] = K[12] * W, B[13] = K[13] * W, B[14] = K[14] * W, B[15] = K[15] * W, B;
 };
-var iK = function(K, W, X, Y) {
-  return K[0] = W[0] + X[0] * Y, K[1] = W[1] + X[1] * Y, K[2] = W[2] + X[2] * Y, K[3] = W[3] + X[3] * Y, K[4] = W[4] + X[4] * Y, K[5] = W[5] + X[5] * Y, K[6] = W[6] + X[6] * Y, K[7] = W[7] + X[7] * Y, K[8] = W[8] + X[8] * Y, K[9] = W[9] + X[9] * Y, K[10] = W[10] + X[10] * Y, K[11] = W[11] + X[11] * Y, K[12] = W[12] + X[12] * Y, K[13] = W[13] + X[13] * Y, K[14] = W[14] + X[14] * Y, K[15] = W[15] + X[15] * Y, K;
+var yB = function(B, K, W, X) {
+  return B[0] = K[0] + W[0] * X, B[1] = K[1] + W[1] * X, B[2] = K[2] + W[2] * X, B[3] = K[3] + W[3] * X, B[4] = K[4] + W[4] * X, B[5] = K[5] + W[5] * X, B[6] = K[6] + W[6] * X, B[7] = K[7] + W[7] * X, B[8] = K[8] + W[8] * X, B[9] = K[9] + W[9] * X, B[10] = K[10] + W[10] * X, B[11] = K[11] + W[11] * X, B[12] = K[12] + W[12] * X, B[13] = K[13] + W[13] * X, B[14] = K[14] + W[14] * X, B[15] = K[15] + W[15] * X, B;
 };
-var yK = function(K, W) {
-  return K[0] === W[0] && K[1] === W[1] && K[2] === W[2] && K[3] === W[3] && K[4] === W[4] && K[5] === W[5] && K[6] === W[6] && K[7] === W[7] && K[8] === W[8] && K[9] === W[9] && K[10] === W[10] && K[11] === W[11] && K[12] === W[12] && K[13] === W[13] && K[14] === W[14] && K[15] === W[15];
+var zB = function(B, K) {
+  return B[0] === K[0] && B[1] === K[1] && B[2] === K[2] && B[3] === K[3] && B[4] === K[4] && B[5] === K[5] && B[6] === K[6] && B[7] === K[7] && B[8] === K[8] && B[9] === K[9] && B[10] === K[10] && B[11] === K[11] && B[12] === K[12] && B[13] === K[13] && B[14] === K[14] && B[15] === K[15];
 };
-var zK = function(K, W) {
-  var X = K[0], Y = K[1], $ = K[2], B = K[3], Q = K[4], Z = K[5], O = K[6], G = K[7], H = K[8], L = K[9], C = K[10], V = K[11], D = K[12], E = K[13], J = K[14], I = K[15], N = W[0], R = W[1], A = W[2], U = W[3], P = W[4], F = W[5], j = W[6], h = W[7], M = W[8], p = W[9], g = W[10], q = W[11], k = W[12], f = W[13], i = W[14], y = W[15];
-  return Math.abs(X - N) <= T * Math.max(1, Math.abs(X), Math.abs(N)) && Math.abs(Y - R) <= T * Math.max(1, Math.abs(Y), Math.abs(R)) && Math.abs($ - A) <= T * Math.max(1, Math.abs($), Math.abs(A)) && Math.abs(B - U) <= T * Math.max(1, Math.abs(B), Math.abs(U)) && Math.abs(Q - P) <= T * Math.max(1, Math.abs(Q), Math.abs(P)) && Math.abs(Z - F) <= T * Math.max(1, Math.abs(Z), Math.abs(F)) && Math.abs(O - j) <= T * Math.max(1, Math.abs(O), Math.abs(j)) && Math.abs(G - h) <= T * Math.max(1, Math.abs(G), Math.abs(h)) && Math.abs(H - M) <= T * Math.max(1, Math.abs(H), Math.abs(M)) && Math.abs(L - p) <= T * Math.max(1, Math.abs(L), Math.abs(p)) && Math.abs(C - g) <= T * Math.max(1, Math.abs(C), Math.abs(g)) && Math.abs(V - q) <= T * Math.max(1, Math.abs(V), Math.abs(q)) && Math.abs(D - k) <= T * Math.max(1, Math.abs(D), Math.abs(k)) && Math.abs(E - f) <= T * Math.max(1, Math.abs(E), Math.abs(f)) && Math.abs(J - i) <= T * Math.max(1, Math.abs(J), Math.abs(i)) && Math.abs(I - y) <= T * Math.max(1, Math.abs(I), Math.abs(y));
+var sB = function(B, K) {
+  var W = B[0], X = B[1], Y = B[2], $ = B[3], Q = B[4], Z = B[5], O = B[6], G = B[7], H = B[8], L = B[9], C = B[10], V = B[11], E = B[12], U = B[13], J = B[14], I = B[15], R = K[0], k = K[1], A = K[2], D = K[3], P = K[4], F = K[5], j = K[6], h = K[7], M = K[8], p = K[9], g = K[10], q = K[11], S = K[12], f = K[13], c = K[14], i = K[15];
+  return Math.abs(W - R) <= N * Math.max(1, Math.abs(W), Math.abs(R)) && Math.abs(X - k) <= N * Math.max(1, Math.abs(X), Math.abs(k)) && Math.abs(Y - A) <= N * Math.max(1, Math.abs(Y), Math.abs(A)) && Math.abs($ - D) <= N * Math.max(1, Math.abs($), Math.abs(D)) && Math.abs(Q - P) <= N * Math.max(1, Math.abs(Q), Math.abs(P)) && Math.abs(Z - F) <= N * Math.max(1, Math.abs(Z), Math.abs(F)) && Math.abs(O - j) <= N * Math.max(1, Math.abs(O), Math.abs(j)) && Math.abs(G - h) <= N * Math.max(1, Math.abs(G), Math.abs(h)) && Math.abs(H - M) <= N * Math.max(1, Math.abs(H), Math.abs(M)) && Math.abs(L - p) <= N * Math.max(1, Math.abs(L), Math.abs(p)) && Math.abs(C - g) <= N * Math.max(1, Math.abs(C), Math.abs(g)) && Math.abs(V - q) <= N * Math.max(1, Math.abs(V), Math.abs(q)) && Math.abs(E - S) <= N * Math.max(1, Math.abs(E), Math.abs(S)) && Math.abs(U - f) <= N * Math.max(1, Math.abs(U), Math.abs(f)) && Math.abs(J - c) <= N * Math.max(1, Math.abs(J), Math.abs(c)) && Math.abs(I - i) <= N * Math.max(1, Math.abs(I), Math.abs(i));
 };
-var e = function() {
-  var K = new _(3);
+var x = function() {
+  var B = new _(3);
   if (_ != Float32Array)
-    K[0] = 0, K[1] = 0, K[2] = 0;
-  return K;
+    B[0] = 0, B[1] = 0, B[2] = 0;
+  return B;
 };
-var mK = function(K) {
-  var W = new _(3);
-  return W[0] = K[0], W[1] = K[1], W[2] = K[2], W;
+var xB = function(B) {
+  var K = new _(3);
+  return K[0] = B[0], K[1] = B[1], K[2] = B[2], K;
 };
-var D0 = function(K) {
-  var W = K[0], X = K[1], Y = K[2];
+var I0 = function(B) {
+  var K = B[0], W = B[1], X = B[2];
+  return Math.hypot(K, W, X);
+};
+var e = function(B, K, W) {
+  var X = new _(3);
+  return X[0] = B, X[1] = K, X[2] = W, X;
+};
+var eB = function(B, K) {
+  return B[0] = K[0], B[1] = K[1], B[2] = K[2], B;
+};
+var bB = function(B, K, W, X) {
+  return B[0] = K, B[1] = W, B[2] = X, B;
+};
+var uB = function(B, K, W) {
+  return B[0] = K[0] + W[0], B[1] = K[1] + W[1], B[2] = K[2] + W[2], B;
+};
+var D0 = function(B, K, W) {
+  return B[0] = K[0] - W[0], B[1] = K[1] - W[1], B[2] = K[2] - W[2], B;
+};
+var P0 = function(B, K, W) {
+  return B[0] = K[0] * W[0], B[1] = K[1] * W[1], B[2] = K[2] * W[2], B;
+};
+var A0 = function(B, K, W) {
+  return B[0] = K[0] / W[0], B[1] = K[1] / W[1], B[2] = K[2] / W[2], B;
+};
+var oB = function(B, K) {
+  return B[0] = Math.ceil(K[0]), B[1] = Math.ceil(K[1]), B[2] = Math.ceil(K[2]), B;
+};
+var tB = function(B, K) {
+  return B[0] = Math.floor(K[0]), B[1] = Math.floor(K[1]), B[2] = Math.floor(K[2]), B;
+};
+var aB = function(B, K, W) {
+  return B[0] = Math.min(K[0], W[0]), B[1] = Math.min(K[1], W[1]), B[2] = Math.min(K[2], W[2]), B;
+};
+var BK = function(B, K, W) {
+  return B[0] = Math.max(K[0], W[0]), B[1] = Math.max(K[1], W[1]), B[2] = Math.max(K[2], W[2]), B;
+};
+var KK = function(B, K) {
+  return B[0] = Math.round(K[0]), B[1] = Math.round(K[1]), B[2] = Math.round(K[2]), B;
+};
+var WK = function(B, K, W) {
+  return B[0] = K[0] * W, B[1] = K[1] * W, B[2] = K[2] * W, B;
+};
+var XK = function(B, K, W, X) {
+  return B[0] = K[0] + W[0] * X, B[1] = K[1] + W[1] * X, B[2] = K[2] + W[2] * X, B;
+};
+var k0 = function(B, K) {
+  var W = K[0] - B[0], X = K[1] - B[1], Y = K[2] - B[2];
   return Math.hypot(W, X, Y);
 };
-var b = function(K, W, X) {
-  var Y = new _(3);
-  return Y[0] = K, Y[1] = W, Y[2] = X, Y;
-};
-var xK = function(K, W) {
-  return K[0] = W[0], K[1] = W[1], K[2] = W[2], K;
-};
-var eK = function(K, W, X, Y) {
-  return K[0] = W, K[1] = X, K[2] = Y, K;
-};
-var bK = function(K, W, X) {
-  return K[0] = W[0] + X[0], K[1] = W[1] + X[1], K[2] = W[2] + X[2], K;
-};
-var I0 = function(K, W, X) {
-  return K[0] = W[0] - X[0], K[1] = W[1] - X[1], K[2] = W[2] - X[2], K;
-};
-var U0 = function(K, W, X) {
-  return K[0] = W[0] * X[0], K[1] = W[1] * X[1], K[2] = W[2] * X[2], K;
-};
-var P0 = function(K, W, X) {
-  return K[0] = W[0] / X[0], K[1] = W[1] / X[1], K[2] = W[2] / X[2], K;
-};
-var uK = function(K, W) {
-  return K[0] = Math.ceil(W[0]), K[1] = Math.ceil(W[1]), K[2] = Math.ceil(W[2]), K;
-};
-var oK = function(K, W) {
-  return K[0] = Math.floor(W[0]), K[1] = Math.floor(W[1]), K[2] = Math.floor(W[2]), K;
-};
-var tK = function(K, W, X) {
-  return K[0] = Math.min(W[0], X[0]), K[1] = Math.min(W[1], X[1]), K[2] = Math.min(W[2], X[2]), K;
-};
-var aK = function(K, W, X) {
-  return K[0] = Math.max(W[0], X[0]), K[1] = Math.max(W[1], X[1]), K[2] = Math.max(W[2], X[2]), K;
-};
-var KW = function(K, W) {
-  return K[0] = Math.round(W[0]), K[1] = Math.round(W[1]), K[2] = Math.round(W[2]), K;
-};
-var WW = function(K, W, X) {
-  return K[0] = W[0] * X, K[1] = W[1] * X, K[2] = W[2] * X, K;
-};
-var XW = function(K, W, X, Y) {
-  return K[0] = W[0] + X[0] * Y, K[1] = W[1] + X[1] * Y, K[2] = W[2] + X[2] * Y, K;
-};
-var A0 = function(K, W) {
-  var X = W[0] - K[0], Y = W[1] - K[1], $ = W[2] - K[2];
-  return Math.hypot(X, Y, $);
-};
-var R0 = function(K, W) {
-  var X = W[0] - K[0], Y = W[1] - K[1], $ = W[2] - K[2];
-  return X * X + Y * Y + $ * $;
-};
-var T0 = function(K) {
-  var W = K[0], X = K[1], Y = K[2];
+var N0 = function(B, K) {
+  var W = K[0] - B[0], X = K[1] - B[1], Y = K[2] - B[2];
   return W * W + X * X + Y * Y;
 };
-var YW = function(K, W) {
-  return K[0] = -W[0], K[1] = -W[1], K[2] = -W[2], K;
+var R0 = function(B) {
+  var K = B[0], W = B[1], X = B[2];
+  return K * K + W * W + X * X;
 };
-var $W = function(K, W) {
-  return K[0] = 1 / W[0], K[1] = 1 / W[1], K[2] = 1 / W[2], K;
+var YK = function(B, K) {
+  return B[0] = -K[0], B[1] = -K[1], B[2] = -K[2], B;
 };
-var K0 = function(K, W) {
-  var X = W[0], Y = W[1], $ = W[2], B = X * X + Y * Y + $ * $;
-  if (B > 0)
-    B = 1 / Math.sqrt(B);
-  return K[0] = W[0] * B, K[1] = W[1] * B, K[2] = W[2] * B, K;
+var $K = function(B, K) {
+  return B[0] = 1 / K[0], B[1] = 1 / K[1], B[2] = 1 / K[2], B;
 };
-var u = function(K, W) {
-  return K[0] * W[0] + K[1] * W[1] + K[2] * W[2];
+var B0 = function(B, K) {
+  var W = K[0], X = K[1], Y = K[2], $ = W * W + X * X + Y * Y;
+  if ($ > 0)
+    $ = 1 / Math.sqrt($);
+  return B[0] = K[0] * $, B[1] = K[1] * $, B[2] = K[2] * $, B;
 };
-var s = function(K, W, X) {
-  var Y = W[0], $ = W[1], B = W[2], Q = X[0], Z = X[1], O = X[2];
-  return K[0] = $ * O - B * Z, K[1] = B * Q - Y * O, K[2] = Y * Z - $ * Q, K;
+var b = function(B, K) {
+  return B[0] * K[0] + B[1] * K[1] + B[2] * K[2];
 };
-var BW = function(K, W, X, Y) {
-  var $ = W[0], B = W[1], Q = W[2];
-  return K[0] = $ + Y * (X[0] - $), K[1] = B + Y * (X[1] - B), K[2] = Q + Y * (X[2] - Q), K;
+var z = function(B, K, W) {
+  var X = K[0], Y = K[1], $ = K[2], Q = W[0], Z = W[1], O = W[2];
+  return B[0] = Y * O - $ * Z, B[1] = $ * Q - X * O, B[2] = X * Z - Y * Q, B;
 };
-var QW = function(K, W, X, Y, $, B) {
-  var Q = B * B, Z = Q * (2 * B - 3) + 1, O = Q * (B - 2) + B, G = Q * (B - 1), H = Q * (3 - 2 * B);
-  return K[0] = W[0] * Z + X[0] * O + Y[0] * G + $[0] * H, K[1] = W[1] * Z + X[1] * O + Y[1] * G + $[1] * H, K[2] = W[2] * Z + X[2] * O + Y[2] * G + $[2] * H, K;
+var QK = function(B, K, W, X) {
+  var Y = K[0], $ = K[1], Q = K[2];
+  return B[0] = Y + X * (W[0] - Y), B[1] = $ + X * (W[1] - $), B[2] = Q + X * (W[2] - Q), B;
 };
-var ZW = function(K, W, X, Y, $, B) {
-  var Q = 1 - B, Z = Q * Q, O = B * B, G = Z * Q, H = 3 * B * Z, L = 3 * O * Q, C = O * B;
-  return K[0] = W[0] * G + X[0] * H + Y[0] * L + $[0] * C, K[1] = W[1] * G + X[1] * H + Y[1] * L + $[1] * C, K[2] = W[2] * G + X[2] * H + Y[2] * L + $[2] * C, K;
+var ZK = function(B, K, W, X, Y, $) {
+  var Q = $ * $, Z = Q * (2 * $ - 3) + 1, O = Q * ($ - 2) + $, G = Q * ($ - 1), H = Q * (3 - 2 * $);
+  return B[0] = K[0] * Z + W[0] * O + X[0] * G + Y[0] * H, B[1] = K[1] * Z + W[1] * O + X[1] * G + Y[1] * H, B[2] = K[2] * Z + W[2] * O + X[2] * G + Y[2] * H, B;
 };
-var OW = function(K, W) {
-  W = W || 1;
-  var X = v() * 2 * Math.PI, Y = v() * 2 - 1, $ = Math.sqrt(1 - Y * Y) * W;
-  return K[0] = Math.cos(X) * $, K[1] = Math.sin(X) * $, K[2] = Y * W, K;
+var OK = function(B, K, W, X, Y, $) {
+  var Q = 1 - $, Z = Q * Q, O = $ * $, G = Z * Q, H = 3 * $ * Z, L = 3 * O * Q, C = O * $;
+  return B[0] = K[0] * G + W[0] * H + X[0] * L + Y[0] * C, B[1] = K[1] * G + W[1] * H + X[1] * L + Y[1] * C, B[2] = K[2] * G + W[2] * H + X[2] * L + Y[2] * C, B;
 };
-var GW = function(K, W, X) {
-  var Y = W[0], $ = W[1], B = W[2], Q = X[3] * Y + X[7] * $ + X[11] * B + X[15];
-  return Q = Q || 1, K[0] = (X[0] * Y + X[4] * $ + X[8] * B + X[12]) / Q, K[1] = (X[1] * Y + X[5] * $ + X[9] * B + X[13]) / Q, K[2] = (X[2] * Y + X[6] * $ + X[10] * B + X[14]) / Q, K;
+var GK = function(B, K) {
+  K = K || 1;
+  var W = v() * 2 * Math.PI, X = v() * 2 - 1, Y = Math.sqrt(1 - X * X) * K;
+  return B[0] = Math.cos(W) * Y, B[1] = Math.sin(W) * Y, B[2] = X * K, B;
 };
-var HW = function(K, W, X) {
-  var Y = W[0], $ = W[1], B = W[2];
-  return K[0] = Y * X[0] + $ * X[3] + B * X[6], K[1] = Y * X[1] + $ * X[4] + B * X[7], K[2] = Y * X[2] + $ * X[5] + B * X[8], K;
+var HK = function(B, K, W) {
+  var X = K[0], Y = K[1], $ = K[2], Q = W[3] * X + W[7] * Y + W[11] * $ + W[15];
+  return Q = Q || 1, B[0] = (W[0] * X + W[4] * Y + W[8] * $ + W[12]) / Q, B[1] = (W[1] * X + W[5] * Y + W[9] * $ + W[13]) / Q, B[2] = (W[2] * X + W[6] * Y + W[10] * $ + W[14]) / Q, B;
 };
-var JW = function(K, W, X) {
-  var Y = X[0], $ = X[1], B = X[2], Q = X[3], Z = W[0], O = W[1], G = W[2], H = $ * G - B * O, L = B * Z - Y * G, C = Y * O - $ * Z, V = $ * C - B * L, D = B * H - Y * C, E = Y * L - $ * H, J = Q * 2;
-  return H *= J, L *= J, C *= J, V *= 2, D *= 2, E *= 2, K[0] = Z + H + V, K[1] = O + L + D, K[2] = G + C + E, K;
+var JK = function(B, K, W) {
+  var X = K[0], Y = K[1], $ = K[2];
+  return B[0] = X * W[0] + Y * W[3] + $ * W[6], B[1] = X * W[1] + Y * W[4] + $ * W[7], B[2] = X * W[2] + Y * W[5] + $ * W[8], B;
 };
-var LW = function(K, W, X, Y) {
-  var $ = [], B = [];
-  return $[0] = W[0] - X[0], $[1] = W[1] - X[1], $[2] = W[2] - X[2], B[0] = $[0], B[1] = $[1] * Math.cos(Y) - $[2] * Math.sin(Y), B[2] = $[1] * Math.sin(Y) + $[2] * Math.cos(Y), K[0] = B[0] + X[0], K[1] = B[1] + X[1], K[2] = B[2] + X[2], K;
+var LK = function(B, K, W) {
+  var X = W[0], Y = W[1], $ = W[2], Q = W[3], Z = K[0], O = K[1], G = K[2], H = Y * G - $ * O, L = $ * Z - X * G, C = X * O - Y * Z, V = Y * C - $ * L, E = $ * H - X * C, U = X * L - Y * H, J = Q * 2;
+  return H *= J, L *= J, C *= J, V *= 2, E *= 2, U *= 2, B[0] = Z + H + V, B[1] = O + L + E, B[2] = G + C + U, B;
 };
-var VW = function(K, W, X, Y) {
-  var $ = [], B = [];
-  return $[0] = W[0] - X[0], $[1] = W[1] - X[1], $[2] = W[2] - X[2], B[0] = $[2] * Math.sin(Y) + $[0] * Math.cos(Y), B[1] = $[1], B[2] = $[2] * Math.cos(Y) - $[0] * Math.sin(Y), K[0] = B[0] + X[0], K[1] = B[1] + X[1], K[2] = B[2] + X[2], K;
+var VK = function(B, K, W, X) {
+  var Y = [], $ = [];
+  return Y[0] = K[0] - W[0], Y[1] = K[1] - W[1], Y[2] = K[2] - W[2], $[0] = Y[0], $[1] = Y[1] * Math.cos(X) - Y[2] * Math.sin(X), $[2] = Y[1] * Math.sin(X) + Y[2] * Math.cos(X), B[0] = $[0] + W[0], B[1] = $[1] + W[1], B[2] = $[2] + W[2], B;
 };
-var CW = function(K, W, X, Y) {
-  var $ = [], B = [];
-  return $[0] = W[0] - X[0], $[1] = W[1] - X[1], $[2] = W[2] - X[2], B[0] = $[0] * Math.cos(Y) - $[1] * Math.sin(Y), B[1] = $[0] * Math.sin(Y) + $[1] * Math.cos(Y), B[2] = $[2], K[0] = B[0] + X[0], K[1] = B[1] + X[1], K[2] = B[2] + X[2], K;
+var CK = function(B, K, W, X) {
+  var Y = [], $ = [];
+  return Y[0] = K[0] - W[0], Y[1] = K[1] - W[1], Y[2] = K[2] - W[2], $[0] = Y[2] * Math.sin(X) + Y[0] * Math.cos(X), $[1] = Y[1], $[2] = Y[2] * Math.cos(X) - Y[0] * Math.sin(X), B[0] = $[0] + W[0], B[1] = $[1] + W[1], B[2] = $[2] + W[2], B;
 };
-var EW = function(K, W) {
-  var X = K[0], Y = K[1], $ = K[2], B = W[0], Q = W[1], Z = W[2], O = Math.sqrt(X * X + Y * Y + $ * $), G = Math.sqrt(B * B + Q * Q + Z * Z), H = O * G, L = H && u(K, W) / H;
+var UK = function(B, K, W, X) {
+  var Y = [], $ = [];
+  return Y[0] = K[0] - W[0], Y[1] = K[1] - W[1], Y[2] = K[2] - W[2], $[0] = Y[0] * Math.cos(X) - Y[1] * Math.sin(X), $[1] = Y[0] * Math.sin(X) + Y[1] * Math.cos(X), $[2] = Y[2], B[0] = $[0] + W[0], B[1] = $[1] + W[1], B[2] = $[2] + W[2], B;
+};
+var EK = function(B, K) {
+  var W = B[0], X = B[1], Y = B[2], $ = K[0], Q = K[1], Z = K[2], O = Math.sqrt(W * W + X * X + Y * Y), G = Math.sqrt($ * $ + Q * Q + Z * Z), H = O * G, L = H && b(B, K) / H;
   return Math.acos(Math.min(Math.max(L, -1), 1));
 };
-var DW = function(K) {
-  return K[0] = 0, K[1] = 0, K[2] = 0, K;
+var IK = function(B) {
+  return B[0] = 0, B[1] = 0, B[2] = 0, B;
 };
-var IW = function(K) {
-  return "vec3(" + K[0] + ", " + K[1] + ", " + K[2] + ")";
+var DK = function(B) {
+  return "vec3(" + B[0] + ", " + B[1] + ", " + B[2] + ")";
 };
-var UW = function(K, W) {
-  return K[0] === W[0] && K[1] === W[1] && K[2] === W[2];
+var PK = function(B, K) {
+  return B[0] === K[0] && B[1] === K[1] && B[2] === K[2];
 };
-var PW = function(K, W) {
-  var X = K[0], Y = K[1], $ = K[2], B = W[0], Q = W[1], Z = W[2];
-  return Math.abs(X - B) <= T * Math.max(1, Math.abs(X), Math.abs(B)) && Math.abs(Y - Q) <= T * Math.max(1, Math.abs(Y), Math.abs(Q)) && Math.abs($ - Z) <= T * Math.max(1, Math.abs($), Math.abs(Z));
+var AK = function(B, K) {
+  var W = B[0], X = B[1], Y = B[2], $ = K[0], Q = K[1], Z = K[2];
+  return Math.abs(W - $) <= N * Math.max(1, Math.abs(W), Math.abs($)) && Math.abs(X - Q) <= N * Math.max(1, Math.abs(X), Math.abs(Q)) && Math.abs(Y - Z) <= N * Math.max(1, Math.abs(Y), Math.abs(Z));
 };
-var jW = function() {
-  var K = new _(4);
+var hK = function() {
+  var B = new _(4);
   if (_ != Float32Array)
-    K[0] = 0, K[1] = 0, K[2] = 0, K[3] = 0;
-  return K;
+    B[0] = 0, B[1] = 0, B[2] = 0, B[3] = 0;
+  return B;
 };
-var N0 = function(K) {
-  var W = new _(4);
-  return W[0] = K[0], W[1] = K[1], W[2] = K[2], W[3] = K[3], W;
+var S0 = function(B) {
+  var K = new _(4);
+  return K[0] = B[0], K[1] = B[1], K[2] = B[2], K[3] = B[3], K;
 };
-var k0 = function(K, W, X, Y) {
-  var $ = new _(4);
-  return $[0] = K, $[1] = W, $[2] = X, $[3] = Y, $;
+var T0 = function(B, K, W, X) {
+  var Y = new _(4);
+  return Y[0] = B, Y[1] = K, Y[2] = W, Y[3] = X, Y;
 };
-var S0 = function(K, W) {
-  return K[0] = W[0], K[1] = W[1], K[2] = W[2], K[3] = W[3], K;
+var _0 = function(B, K) {
+  return B[0] = K[0], B[1] = K[1], B[2] = K[2], B[3] = K[3], B;
 };
-var _0 = function(K, W, X, Y, $) {
-  return K[0] = W, K[1] = X, K[2] = Y, K[3] = $, K;
+var j0 = function(B, K, W, X, Y) {
+  return B[0] = K, B[1] = W, B[2] = X, B[3] = Y, B;
 };
-var j0 = function(K, W, X) {
-  return K[0] = W[0] + X[0], K[1] = W[1] + X[1], K[2] = W[2] + X[2], K[3] = W[3] + X[3], K;
+var h0 = function(B, K, W) {
+  return B[0] = K[0] + W[0], B[1] = K[1] + W[1], B[2] = K[2] + W[2], B[3] = K[3] + W[3], B;
 };
-var h0 = function(K, W, X) {
-  return K[0] = W[0] * X, K[1] = W[1] * X, K[2] = W[2] * X, K[3] = W[3] * X, K;
+var M0 = function(B, K, W) {
+  return B[0] = K[0] * W, B[1] = K[1] * W, B[2] = K[2] * W, B[3] = K[3] * W, B;
 };
-var M0 = function(K) {
-  var W = K[0], X = K[1], Y = K[2], $ = K[3];
-  return Math.hypot(W, X, Y, $);
+var F0 = function(B) {
+  var K = B[0], W = B[1], X = B[2], Y = B[3];
+  return Math.hypot(K, W, X, Y);
 };
-var F0 = function(K) {
-  var W = K[0], X = K[1], Y = K[2], $ = K[3];
-  return W * W + X * X + Y * Y + $ * $;
+var p0 = function(B) {
+  var K = B[0], W = B[1], X = B[2], Y = B[3];
+  return K * K + W * W + X * X + Y * Y;
 };
-var p0 = function(K, W) {
-  var X = W[0], Y = W[1], $ = W[2], B = W[3], Q = X * X + Y * Y + $ * $ + B * B;
+var g0 = function(B, K) {
+  var W = K[0], X = K[1], Y = K[2], $ = K[3], Q = W * W + X * X + Y * Y + $ * $;
   if (Q > 0)
     Q = 1 / Math.sqrt(Q);
-  return K[0] = X * Q, K[1] = Y * Q, K[2] = $ * Q, K[3] = B * Q, K;
+  return B[0] = W * Q, B[1] = X * Q, B[2] = Y * Q, B[3] = $ * Q, B;
 };
-var g0 = function(K, W) {
-  return K[0] * W[0] + K[1] * W[1] + K[2] * W[2] + K[3] * W[3];
+var q0 = function(B, K) {
+  return B[0] * K[0] + B[1] * K[1] + B[2] * K[2] + B[3] * K[3];
 };
-var q0 = function(K, W, X, Y) {
-  var $ = W[0], B = W[1], Q = W[2], Z = W[3];
-  return K[0] = $ + Y * (X[0] - $), K[1] = B + Y * (X[1] - B), K[2] = Q + Y * (X[2] - Q), K[3] = Z + Y * (X[3] - Z), K;
+var f0 = function(B, K, W, X) {
+  var Y = K[0], $ = K[1], Q = K[2], Z = K[3];
+  return B[0] = Y + X * (W[0] - Y), B[1] = $ + X * (W[1] - $), B[2] = Q + X * (W[2] - Q), B[3] = Z + X * (W[3] - Z), B;
 };
-var f0 = function(K, W) {
-  return K[0] === W[0] && K[1] === W[1] && K[2] === W[2] && K[3] === W[3];
+var w0 = function(B, K) {
+  return B[0] === K[0] && B[1] === K[1] && B[2] === K[2] && B[3] === K[3];
 };
-var w0 = function(K, W) {
-  var X = K[0], Y = K[1], $ = K[2], B = K[3], Q = W[0], Z = W[1], O = W[2], G = W[3];
-  return Math.abs(X - Q) <= T * Math.max(1, Math.abs(X), Math.abs(Q)) && Math.abs(Y - Z) <= T * Math.max(1, Math.abs(Y), Math.abs(Z)) && Math.abs($ - O) <= T * Math.max(1, Math.abs($), Math.abs(O)) && Math.abs(B - G) <= T * Math.max(1, Math.abs(B), Math.abs(G));
+var d0 = function(B, K) {
+  var W = B[0], X = B[1], Y = B[2], $ = B[3], Q = K[0], Z = K[1], O = K[2], G = K[3];
+  return Math.abs(W - Q) <= N * Math.max(1, Math.abs(W), Math.abs(Q)) && Math.abs(X - Z) <= N * Math.max(1, Math.abs(X), Math.abs(Z)) && Math.abs(Y - O) <= N * Math.max(1, Math.abs(Y), Math.abs(O)) && Math.abs($ - G) <= N * Math.max(1, Math.abs($), Math.abs(G));
 };
-var X0 = function() {
-  var K = new _(4);
+var W0 = function() {
+  var B = new _(4);
   if (_ != Float32Array)
-    K[0] = 0, K[1] = 0, K[2] = 0;
-  return K[3] = 1, K;
+    B[0] = 0, B[1] = 0, B[2] = 0;
+  return B[3] = 1, B;
 };
-var MW = function(K) {
-  return K[0] = 0, K[1] = 0, K[2] = 0, K[3] = 1, K;
+var FK = function(B) {
+  return B[0] = 0, B[1] = 0, B[2] = 0, B[3] = 1, B;
 };
-var d0 = function(K, W, X) {
-  X = X * 0.5;
-  var Y = Math.sin(X);
-  return K[0] = Y * W[0], K[1] = Y * W[1], K[2] = Y * W[2], K[3] = Math.cos(X), K;
+var v0 = function(B, K, W) {
+  W = W * 0.5;
+  var X = Math.sin(W);
+  return B[0] = X * K[0], B[1] = X * K[1], B[2] = X * K[2], B[3] = Math.cos(W), B;
 };
-var FW = function(K, W) {
-  var X = Math.acos(W[3]) * 2, Y = Math.sin(X / 2);
-  if (Y > T)
-    K[0] = W[0] / Y, K[1] = W[1] / Y, K[2] = W[2] / Y;
+var pK = function(B, K) {
+  var W = Math.acos(K[3]) * 2, X = Math.sin(W / 2);
+  if (X > N)
+    B[0] = K[0] / X, B[1] = K[1] / X, B[2] = K[2] / X;
   else
-    K[0] = 1, K[1] = 0, K[2] = 0;
-  return X;
+    B[0] = 1, B[1] = 0, B[2] = 0;
+  return W;
 };
-var pW = function(K, W) {
-  var X = y0(K, W);
-  return Math.acos(2 * X * X - 1);
+var gK = function(B, K) {
+  var W = z0(B, K);
+  return Math.acos(2 * W * W - 1);
 };
-var v0 = function(K, W, X) {
-  var Y = W[0], $ = W[1], B = W[2], Q = W[3], Z = X[0], O = X[1], G = X[2], H = X[3];
-  return K[0] = Y * H + Q * Z + $ * G - B * O, K[1] = $ * H + Q * O + B * Z - Y * G, K[2] = B * H + Q * G + Y * O - $ * Z, K[3] = Q * H - Y * Z - $ * O - B * G, K;
+var n0 = function(B, K, W) {
+  var X = K[0], Y = K[1], $ = K[2], Q = K[3], Z = W[0], O = W[1], G = W[2], H = W[3];
+  return B[0] = X * H + Q * Z + Y * G - $ * O, B[1] = Y * H + Q * O + $ * Z - X * G, B[2] = $ * H + Q * G + X * O - Y * Z, B[3] = Q * H - X * Z - Y * O - $ * G, B;
 };
-var gW = function(K, W, X) {
-  X *= 0.5;
-  var Y = W[0], $ = W[1], B = W[2], Q = W[3], Z = Math.sin(X), O = Math.cos(X);
-  return K[0] = Y * O + Q * Z, K[1] = $ * O + B * Z, K[2] = B * O - $ * Z, K[3] = Q * O - Y * Z, K;
+var qK = function(B, K, W) {
+  W *= 0.5;
+  var X = K[0], Y = K[1], $ = K[2], Q = K[3], Z = Math.sin(W), O = Math.cos(W);
+  return B[0] = X * O + Q * Z, B[1] = Y * O + $ * Z, B[2] = $ * O - Y * Z, B[3] = Q * O - X * Z, B;
 };
-var qW = function(K, W, X) {
-  X *= 0.5;
-  var Y = W[0], $ = W[1], B = W[2], Q = W[3], Z = Math.sin(X), O = Math.cos(X);
-  return K[0] = Y * O - B * Z, K[1] = $ * O + Q * Z, K[2] = B * O + Y * Z, K[3] = Q * O - $ * Z, K;
+var fK = function(B, K, W) {
+  W *= 0.5;
+  var X = K[0], Y = K[1], $ = K[2], Q = K[3], Z = Math.sin(W), O = Math.cos(W);
+  return B[0] = X * O - $ * Z, B[1] = Y * O + Q * Z, B[2] = $ * O + X * Z, B[3] = Q * O - Y * Z, B;
 };
-var fW = function(K, W, X) {
-  X *= 0.5;
-  var Y = W[0], $ = W[1], B = W[2], Q = W[3], Z = Math.sin(X), O = Math.cos(X);
-  return K[0] = Y * O + $ * Z, K[1] = $ * O - Y * Z, K[2] = B * O + Q * Z, K[3] = Q * O - B * Z, K;
+var wK = function(B, K, W) {
+  W *= 0.5;
+  var X = K[0], Y = K[1], $ = K[2], Q = K[3], Z = Math.sin(W), O = Math.cos(W);
+  return B[0] = X * O + Y * Z, B[1] = Y * O - X * Z, B[2] = $ * O + Q * Z, B[3] = Q * O - $ * Z, B;
 };
-var wW = function(K, W) {
-  var X = W[0], Y = W[1], $ = W[2];
-  return K[0] = X, K[1] = Y, K[2] = $, K[3] = Math.sqrt(Math.abs(1 - X * X - Y * Y - $ * $)), K;
+var dK = function(B, K) {
+  var W = K[0], X = K[1], Y = K[2];
+  return B[0] = W, B[1] = X, B[2] = Y, B[3] = Math.sqrt(Math.abs(1 - W * W - X * X - Y * Y)), B;
 };
-var n0 = function(K, W) {
-  var X = W[0], Y = W[1], $ = W[2], B = W[3], Q = Math.sqrt(X * X + Y * Y + $ * $), Z = Math.exp(B), O = Q > 0 ? Z * Math.sin(Q) / Q : 0;
-  return K[0] = X * O, K[1] = Y * O, K[2] = $ * O, K[3] = Z * Math.cos(Q), K;
+var l0 = function(B, K) {
+  var W = K[0], X = K[1], Y = K[2], $ = K[3], Q = Math.sqrt(W * W + X * X + Y * Y), Z = Math.exp($), O = Q > 0 ? Z * Math.sin(Q) / Q : 0;
+  return B[0] = W * O, B[1] = X * O, B[2] = Y * O, B[3] = Z * Math.cos(Q), B;
 };
-var l0 = function(K, W) {
-  var X = W[0], Y = W[1], $ = W[2], B = W[3], Q = Math.sqrt(X * X + Y * Y + $ * $), Z = Q > 0 ? Math.atan2(Q, B) / Q : 0;
-  return K[0] = X * Z, K[1] = Y * Z, K[2] = $ * Z, K[3] = 0.5 * Math.log(X * X + Y * Y + $ * $ + B * B), K;
+var c0 = function(B, K) {
+  var W = K[0], X = K[1], Y = K[2], $ = K[3], Q = Math.sqrt(W * W + X * X + Y * Y), Z = Q > 0 ? Math.atan2(Q, $) / Q : 0;
+  return B[0] = W * Z, B[1] = X * Z, B[2] = Y * Z, B[3] = 0.5 * Math.log(W * W + X * X + Y * Y + $ * $), B;
 };
-var dW = function(K, W, X) {
-  return l0(K, W), i0(K, K, X), n0(K, K), K;
+var vK = function(B, K, W) {
+  return c0(B, K), y0(B, B, W), l0(B, B), B;
 };
-var o = function(K, W, X, Y) {
-  var $ = W[0], B = W[1], Q = W[2], Z = W[3], O = X[0], G = X[1], H = X[2], L = X[3], C, V, D, E, J;
-  if (V = $ * O + B * G + Q * H + Z * L, V < 0)
+var u = function(B, K, W, X) {
+  var Y = K[0], $ = K[1], Q = K[2], Z = K[3], O = W[0], G = W[1], H = W[2], L = W[3], C, V, E, U, J;
+  if (V = Y * O + $ * G + Q * H + Z * L, V < 0)
     V = -V, O = -O, G = -G, H = -H, L = -L;
-  if (1 - V > T)
-    C = Math.acos(V), D = Math.sin(C), E = Math.sin((1 - Y) * C) / D, J = Math.sin(Y * C) / D;
+  if (1 - V > N)
+    C = Math.acos(V), E = Math.sin(C), U = Math.sin((1 - X) * C) / E, J = Math.sin(X * C) / E;
   else
-    E = 1 - Y, J = Y;
-  return K[0] = E * $ + J * O, K[1] = E * B + J * G, K[2] = E * Q + J * H, K[3] = E * Z + J * L, K;
+    U = 1 - X, J = X;
+  return B[0] = U * Y + J * O, B[1] = U * $ + J * G, B[2] = U * Q + J * H, B[3] = U * Z + J * L, B;
 };
-var vW = function(K) {
-  var W = v(), X = v(), Y = v(), $ = Math.sqrt(1 - W), B = Math.sqrt(W);
-  return K[0] = $ * Math.sin(2 * Math.PI * X), K[1] = $ * Math.cos(2 * Math.PI * X), K[2] = B * Math.sin(2 * Math.PI * Y), K[3] = B * Math.cos(2 * Math.PI * Y), K;
+var nK = function(B) {
+  var K = v(), W = v(), X = v(), Y = Math.sqrt(1 - K), $ = Math.sqrt(K);
+  return B[0] = Y * Math.sin(2 * Math.PI * W), B[1] = Y * Math.cos(2 * Math.PI * W), B[2] = $ * Math.sin(2 * Math.PI * X), B[3] = $ * Math.cos(2 * Math.PI * X), B;
 };
-var nW = function(K, W) {
-  var X = W[0], Y = W[1], $ = W[2], B = W[3], Q = X * X + Y * Y + $ * $ + B * B, Z = Q ? 1 / Q : 0;
-  return K[0] = -X * Z, K[1] = -Y * Z, K[2] = -$ * Z, K[3] = B * Z, K;
+var lK = function(B, K) {
+  var W = K[0], X = K[1], Y = K[2], $ = K[3], Q = W * W + X * X + Y * Y + $ * $, Z = Q ? 1 / Q : 0;
+  return B[0] = -W * Z, B[1] = -X * Z, B[2] = -Y * Z, B[3] = $ * Z, B;
 };
-var lW = function(K, W) {
-  return K[0] = -W[0], K[1] = -W[1], K[2] = -W[2], K[3] = W[3], K;
+var cK = function(B, K) {
+  return B[0] = -K[0], B[1] = -K[1], B[2] = -K[2], B[3] = K[3], B;
 };
-var c0 = function(K, W) {
-  var X = W[0] + W[4] + W[8], Y;
-  if (X > 0)
-    Y = Math.sqrt(X + 1), K[3] = 0.5 * Y, Y = 0.5 / Y, K[0] = (W[5] - W[7]) * Y, K[1] = (W[6] - W[2]) * Y, K[2] = (W[1] - W[3]) * Y;
+var i0 = function(B, K) {
+  var W = K[0] + K[4] + K[8], X;
+  if (W > 0)
+    X = Math.sqrt(W + 1), B[3] = 0.5 * X, X = 0.5 / X, B[0] = (K[5] - K[7]) * X, B[1] = (K[6] - K[2]) * X, B[2] = (K[1] - K[3]) * X;
   else {
-    var $ = 0;
-    if (W[4] > W[0])
-      $ = 1;
-    if (W[8] > W[$ * 3 + $])
-      $ = 2;
-    var B = ($ + 1) % 3, Q = ($ + 2) % 3;
-    Y = Math.sqrt(W[$ * 3 + $] - W[B * 3 + B] - W[Q * 3 + Q] + 1), K[$] = 0.5 * Y, Y = 0.5 / Y, K[3] = (W[B * 3 + Q] - W[Q * 3 + B]) * Y, K[B] = (W[B * 3 + $] + W[$ * 3 + B]) * Y, K[Q] = (W[Q * 3 + $] + W[$ * 3 + Q]) * Y;
+    var Y = 0;
+    if (K[4] > K[0])
+      Y = 1;
+    if (K[8] > K[Y * 3 + Y])
+      Y = 2;
+    var $ = (Y + 1) % 3, Q = (Y + 2) % 3;
+    X = Math.sqrt(K[Y * 3 + Y] - K[$ * 3 + $] - K[Q * 3 + Q] + 1), B[Y] = 0.5 * X, X = 0.5 / X, B[3] = (K[$ * 3 + Q] - K[Q * 3 + $]) * X, B[$] = (K[$ * 3 + Y] + K[Y * 3 + $]) * X, B[Q] = (K[Q * 3 + Y] + K[Y * 3 + Q]) * X;
   }
-  return K;
+  return B;
 };
-var cW = function(K, W, X, Y) {
-  var $ = 0.5 * Math.PI / 180;
-  W *= $, X *= $, Y *= $;
-  var B = Math.sin(W), Q = Math.cos(W), Z = Math.sin(X), O = Math.cos(X), G = Math.sin(Y), H = Math.cos(Y);
-  return K[0] = B * O * H - Q * Z * G, K[1] = Q * Z * H + B * O * G, K[2] = Q * O * G - B * Z * H, K[3] = Q * O * H + B * Z * G, K;
+var iK = function(B, K, W, X) {
+  var Y = 0.5 * Math.PI / 180;
+  K *= Y, W *= Y, X *= Y;
+  var $ = Math.sin(K), Q = Math.cos(K), Z = Math.sin(W), O = Math.cos(W), G = Math.sin(X), H = Math.cos(X);
+  return B[0] = $ * O * H - Q * Z * G, B[1] = Q * Z * H + $ * O * G, B[2] = Q * O * G - $ * Z * H, B[3] = Q * O * H + $ * Z * G, B;
 };
-var iW = function(K) {
-  return "quat(" + K[0] + ", " + K[1] + ", " + K[2] + ", " + K[3] + ")";
+var yK = function(B) {
+  return "quat(" + B[0] + ", " + B[1] + ", " + B[2] + ", " + B[3] + ")";
 };
-var a0 = Object.defineProperty;
-var a = (K, W) => {
-  for (var X in W)
-    a0(K, X, { get: W[X], enumerable: true, configurable: true, set: (Y) => W[X] = () => Y });
+var t = function(B, K, W, X) {
+  return X[0] = B, X[1] = K, X[2] = W, X;
 };
-var T = 0.000001;
+var Q0 = function(B, K) {
+  const W = B.getMatrix();
+  K[0] = W[12], K[1] = W[13], K[2] = W[14];
+};
+var BB = Object.defineProperty;
+var a = (B, K) => {
+  for (var W in K)
+    BB(B, W, { get: K[W], enumerable: true, configurable: true, set: (X) => K[W] = () => X });
+};
+var N = 0.000001;
 var _ = typeof Float32Array !== "undefined" ? Float32Array : Array;
 var v = Math.random;
-var HX = Math.PI / 180;
+var JW = Math.PI / 180;
 if (!Math.hypot)
   Math.hypot = function() {
-    var K = 0, W = arguments.length;
-    while (W--)
-      K += arguments[W] * arguments[W];
-    return Math.sqrt(K);
+    var B = 0, K = arguments.length;
+    while (K--)
+      B += arguments[K] * arguments[K];
+    return Math.sqrt(B);
   };
-var S = {};
-a(S, { transpose: () => {
+var T = {};
+a(T, { transpose: () => {
   {
-    return ZK;
+    return OB;
   }
 }, translate: () => {
   {
-    return JK;
+    return LB;
   }
 }, targetTo: () => {
   {
-    return dK;
+    return vB;
   }
 }, subtract: () => {
   {
@@ -581,993 +588,984 @@ a(S, { transpose: () => {
   }
 }, sub: () => {
   {
-    return rK;
+    return mB;
   }
 }, str: () => {
   {
-    return vK;
+    return nB;
   }
 }, set: () => {
   {
-    return QK;
+    return ZB;
   }
 }, scale: () => {
   {
-    return LK;
+    return VB;
   }
 }, rotateZ: () => {
   {
-    return DK;
+    return IB;
   }
 }, rotateY: () => {
   {
-    return EK;
+    return EB;
   }
 }, rotateX: () => {
   {
-    return CK;
+    return UB;
   }
 }, rotate: () => {
   {
-    return VK;
+    return CB;
   }
 }, perspectiveZO: () => {
   {
-    return pK;
+    return gB;
   }
 }, perspectiveNO: () => {
   {
-    return V0;
+    return C0;
   }
 }, perspectiveFromFieldOfView: () => {
   {
-    return gK;
+    return qB;
   }
 }, perspective: () => {
   {
-    return FK;
+    return pB;
   }
 }, orthoZO: () => {
   {
-    return fK;
+    return wB;
   }
 }, orthoNO: () => {
   {
-    return C0;
+    return U0;
   }
 }, ortho: () => {
   {
-    return qK;
+    return fB;
   }
 }, multiplyScalarAndAdd: () => {
   {
-    return iK;
+    return yB;
   }
 }, multiplyScalar: () => {
   {
-    return cK;
+    return iB;
   }
 }, multiply: () => {
-  {
-    return H0;
-  }
-}, mul: () => {
-  {
-    return sK;
-  }
-}, lookAt: () => {
-  {
-    return wK;
-  }
-}, invert: () => {
-  {
-    return OK;
-  }
-}, identity: () => {
-  {
-    return G0;
-  }
-}, getTranslation: () => {
-  {
-    return kK;
-  }
-}, getScaling: () => {
-  {
-    return L0;
-  }
-}, getRotation: () => {
-  {
-    return SK;
-  }
-}, frustum: () => {
-  {
-    return MK;
-  }
-}, fromZRotation: () => {
-  {
-    return TK;
-  }
-}, fromYRotation: () => {
-  {
-    return RK;
-  }
-}, fromXRotation: () => {
-  {
-    return AK;
-  }
-}, fromValues: () => {
-  {
-    return BK;
-  }
-}, fromTranslation: () => {
-  {
-    return IK;
-  }
-}, fromScaling: () => {
-  {
-    return UK;
-  }
-}, fromRotationTranslationScaleOrigin: () => {
-  {
-    return jK;
-  }
-}, fromRotationTranslationScale: () => {
-  {
-    return _K;
-  }
-}, fromRotationTranslation: () => {
   {
     return J0;
   }
-}, fromRotation: () => {
-  {
-    return PK;
-  }
-}, fromQuat2: () => {
-  {
-    return NK;
-  }
-}, fromQuat: () => {
-  {
-    return hK;
-  }
-}, frob: () => {
-  {
-    return nK;
-  }
-}, exactEquals: () => {
-  {
-    return yK;
-  }
-}, equals: () => {
-  {
-    return zK;
-  }
-}, determinant: () => {
-  {
-    return HK;
-  }
-}, create: () => {
-  {
-    return XK;
-  }
-}, copy: () => {
-  {
-    return $K;
-  }
-}, clone: () => {
-  {
-    return YK;
-  }
-}, adjoint: () => {
-  {
-    return GK;
-  }
-}, add: () => {
-  {
-    return lK;
-  }
-} });
-var FK = V0;
-var qK = C0;
-var sK = H0;
-var rK = E0;
-var m = {};
-a(m, { str: () => {
-  {
-    return iW;
-  }
-}, squaredLength: () => {
-  {
-    return s0;
-  }
-}, sqrLen: () => {
-  {
-    return uW;
-  }
-}, sqlerp: () => {
-  {
-    return KX;
-  }
-}, slerp: () => {
-  {
-    return o;
-  }
-}, setAxisAngle: () => {
-  {
-    return d0;
-  }
-}, setAxes: () => {
-  {
-    return WX;
-  }
-}, set: () => {
-  {
-    return rW;
-  }
-}, scale: () => {
-  {
-    return i0;
-  }
-}, rotationTo: () => {
-  {
-    return aW;
-  }
-}, rotateZ: () => {
-  {
-    return fW;
-  }
-}, rotateY: () => {
-  {
-    return qW;
-  }
-}, rotateX: () => {
-  {
-    return gW;
-  }
-}, random: () => {
-  {
-    return vW;
-  }
-}, pow: () => {
-  {
-    return dW;
-  }
-}, normalize: () => {
-  {
-    return Y0;
-  }
-}, multiply: () => {
-  {
-    return v0;
-  }
 }, mul: () => {
   {
-    return xW;
+    return rB;
   }
-}, ln: () => {
+}, lookAt: () => {
   {
-    return l0;
-  }
-}, lerp: () => {
-  {
-    return eW;
-  }
-}, length: () => {
-  {
-    return z0;
-  }
-}, len: () => {
-  {
-    return bW;
+    return dB;
   }
 }, invert: () => {
   {
-    return nW;
+    return GB;
   }
 }, identity: () => {
   {
-    return MW;
+    return H0;
   }
-}, getAxisAngle: () => {
+}, getTranslation: () => {
   {
-    return FW;
+    return TB;
   }
-}, getAngle: () => {
+}, getScaling: () => {
   {
-    return pW;
+    return V0;
+  }
+}, getRotation: () => {
+  {
+    return _B;
+  }
+}, frustum: () => {
+  {
+    return FB;
+  }
+}, fromZRotation: () => {
+  {
+    return RB;
+  }
+}, fromYRotation: () => {
+  {
+    return NB;
+  }
+}, fromXRotation: () => {
+  {
+    return kB;
   }
 }, fromValues: () => {
   {
-    return zW;
+    return QB;
   }
-}, fromMat3: () => {
+}, fromTranslation: () => {
   {
-    return c0;
+    return DB;
   }
-}, fromEuler: () => {
+}, fromScaling: () => {
   {
-    return cW;
+    return PB;
   }
-}, exp: () => {
+}, fromRotationTranslationScaleOrigin: () => {
   {
-    return n0;
+    return hB;
+  }
+}, fromRotationTranslationScale: () => {
+  {
+    return jB;
+  }
+}, fromRotationTranslation: () => {
+  {
+    return L0;
+  }
+}, fromRotation: () => {
+  {
+    return AB;
+  }
+}, fromQuat2: () => {
+  {
+    return SB;
+  }
+}, fromQuat: () => {
+  {
+    return MB;
+  }
+}, frob: () => {
+  {
+    return lB;
   }
 }, exactEquals: () => {
   {
-    return oW;
+    return zB;
   }
 }, equals: () => {
   {
-    return tW;
+    return sB;
   }
-}, dot: () => {
+}, determinant: () => {
   {
-    return y0;
+    return JB;
   }
 }, create: () => {
   {
-    return X0;
+    return XB;
   }
 }, copy: () => {
   {
-    return sW;
-  }
-}, conjugate: () => {
-  {
-    return lW;
+    return $B;
   }
 }, clone: () => {
   {
-    return yW;
+    return YB;
   }
-}, calculateW: () => {
+}, adjoint: () => {
   {
-    return wW;
+    return HB;
   }
 }, add: () => {
   {
-    return mW;
+    return cB;
   }
 } });
+var pB = C0;
+var fB = U0;
+var rB = J0;
+var mB = E0;
 var r = {};
-a(r, { zero: () => {
+a(r, { str: () => {
   {
-    return DW;
-  }
-}, transformQuat: () => {
-  {
-    return JW;
-  }
-}, transformMat4: () => {
-  {
-    return GW;
-  }
-}, transformMat3: () => {
-  {
-    return HW;
-  }
-}, subtract: () => {
-  {
-    return I0;
-  }
-}, sub: () => {
-  {
-    return AW;
-  }
-}, str: () => {
-  {
-    return IW;
+    return yK;
   }
 }, squaredLength: () => {
   {
-    return T0;
-  }
-}, squaredDistance: () => {
-  {
-    return R0;
+    return r0;
   }
 }, sqrLen: () => {
   {
-    return SW;
+    return oK;
   }
-}, sqrDist: () => {
-  {
-    return kW;
-  }
-}, set: () => {
-  {
-    return eK;
-  }
-}, scaleAndAdd: () => {
-  {
-    return XW;
-  }
-}, scale: () => {
-  {
-    return WW;
-  }
-}, round: () => {
+}, sqlerp: () => {
   {
     return KW;
   }
-}, rotateZ: () => {
-  {
-    return CW;
-  }
-}, rotateY: () => {
-  {
-    return VW;
-  }
-}, rotateX: () => {
-  {
-    return LW;
-  }
-}, random: () => {
-  {
-    return OW;
-  }
-}, normalize: () => {
-  {
-    return K0;
-  }
-}, negate: () => {
-  {
-    return YW;
-  }
-}, multiply: () => {
-  {
-    return U0;
-  }
-}, mul: () => {
-  {
-    return RW;
-  }
-}, min: () => {
-  {
-    return tK;
-  }
-}, max: () => {
-  {
-    return aK;
-  }
-}, lerp: () => {
-  {
-    return BW;
-  }
-}, length: () => {
-  {
-    return D0;
-  }
-}, len: () => {
-  {
-    return W0;
-  }
-}, inverse: () => {
-  {
-    return $W;
-  }
-}, hermite: () => {
-  {
-    return QW;
-  }
-}, fromValues: () => {
-  {
-    return b;
-  }
-}, forEach: () => {
-  {
-    return _W;
-  }
-}, floor: () => {
-  {
-    return oK;
-  }
-}, exactEquals: () => {
-  {
-    return UW;
-  }
-}, equals: () => {
-  {
-    return PW;
-  }
-}, dot: () => {
+}, slerp: () => {
   {
     return u;
   }
-}, divide: () => {
+}, setAxisAngle: () => {
   {
-    return P0;
+    return v0;
   }
-}, div: () => {
+}, setAxes: () => {
   {
-    return TW;
+    return WW;
   }
-}, distance: () => {
-  {
-    return A0;
-  }
-}, dist: () => {
-  {
-    return NW;
-  }
-}, cross: () => {
-  {
-    return s;
-  }
-}, create: () => {
-  {
-    return e;
-  }
-}, copy: () => {
-  {
-    return xK;
-  }
-}, clone: () => {
+}, set: () => {
   {
     return mK;
   }
-}, ceil: () => {
+}, scale: () => {
   {
-    return uK;
+    return y0;
   }
-}, bezier: () => {
+}, rotationTo: () => {
   {
-    return ZW;
+    return BW;
   }
-}, angle: () => {
+}, rotateZ: () => {
   {
-    return EW;
+    return wK;
   }
-}, add: () => {
+}, rotateY: () => {
+  {
+    return fK;
+  }
+}, rotateX: () => {
+  {
+    return qK;
+  }
+}, random: () => {
+  {
+    return nK;
+  }
+}, pow: () => {
+  {
+    return vK;
+  }
+}, normalize: () => {
+  {
+    return X0;
+  }
+}, multiply: () => {
+  {
+    return n0;
+  }
+}, mul: () => {
+  {
+    return eK;
+  }
+}, ln: () => {
+  {
+    return c0;
+  }
+}, lerp: () => {
   {
     return bK;
   }
+}, length: () => {
+  {
+    return s0;
+  }
+}, len: () => {
+  {
+    return uK;
+  }
+}, invert: () => {
+  {
+    return lK;
+  }
+}, identity: () => {
+  {
+    return FK;
+  }
+}, getAxisAngle: () => {
+  {
+    return pK;
+  }
+}, getAngle: () => {
+  {
+    return gK;
+  }
+}, fromValues: () => {
+  {
+    return sK;
+  }
+}, fromMat3: () => {
+  {
+    return i0;
+  }
+}, fromEuler: () => {
+  {
+    return iK;
+  }
+}, exp: () => {
+  {
+    return l0;
+  }
+}, exactEquals: () => {
+  {
+    return tK;
+  }
+}, equals: () => {
+  {
+    return aK;
+  }
+}, dot: () => {
+  {
+    return z0;
+  }
+}, create: () => {
+  {
+    return W0;
+  }
+}, copy: () => {
+  {
+    return rK;
+  }
+}, conjugate: () => {
+  {
+    return cK;
+  }
+}, clone: () => {
+  {
+    return zK;
+  }
+}, calculateW: () => {
+  {
+    return dK;
+  }
+}, add: () => {
+  {
+    return xK;
+  }
 } });
-var AW = I0;
-var RW = U0;
-var TW = P0;
-var NW = A0;
-var kW = R0;
-var W0 = D0;
-var SW = T0;
-var _W = function() {
-  var K = e();
-  return function(W, X, Y, $, B, Q) {
+var s = {};
+a(s, { zero: () => {
+  {
+    return IK;
+  }
+}, transformQuat: () => {
+  {
+    return LK;
+  }
+}, transformMat4: () => {
+  {
+    return HK;
+  }
+}, transformMat3: () => {
+  {
+    return JK;
+  }
+}, subtract: () => {
+  {
+    return D0;
+  }
+}, sub: () => {
+  {
+    return kK;
+  }
+}, str: () => {
+  {
+    return DK;
+  }
+}, squaredLength: () => {
+  {
+    return R0;
+  }
+}, squaredDistance: () => {
+  {
+    return N0;
+  }
+}, sqrLen: () => {
+  {
+    return _K;
+  }
+}, sqrDist: () => {
+  {
+    return TK;
+  }
+}, set: () => {
+  {
+    return bB;
+  }
+}, scaleAndAdd: () => {
+  {
+    return XK;
+  }
+}, scale: () => {
+  {
+    return WK;
+  }
+}, round: () => {
+  {
+    return KK;
+  }
+}, rotateZ: () => {
+  {
+    return UK;
+  }
+}, rotateY: () => {
+  {
+    return CK;
+  }
+}, rotateX: () => {
+  {
+    return VK;
+  }
+}, random: () => {
+  {
+    return GK;
+  }
+}, normalize: () => {
+  {
+    return B0;
+  }
+}, negate: () => {
+  {
+    return YK;
+  }
+}, multiply: () => {
+  {
+    return P0;
+  }
+}, mul: () => {
+  {
+    return NK;
+  }
+}, min: () => {
+  {
+    return aB;
+  }
+}, max: () => {
+  {
+    return BK;
+  }
+}, lerp: () => {
+  {
+    return QK;
+  }
+}, length: () => {
+  {
+    return I0;
+  }
+}, len: () => {
+  {
+    return K0;
+  }
+}, inverse: () => {
+  {
+    return $K;
+  }
+}, hermite: () => {
+  {
+    return ZK;
+  }
+}, fromValues: () => {
+  {
+    return e;
+  }
+}, forEach: () => {
+  {
+    return jK;
+  }
+}, floor: () => {
+  {
+    return tB;
+  }
+}, exactEquals: () => {
+  {
+    return PK;
+  }
+}, equals: () => {
+  {
+    return AK;
+  }
+}, dot: () => {
+  {
+    return b;
+  }
+}, divide: () => {
+  {
+    return A0;
+  }
+}, div: () => {
+  {
+    return RK;
+  }
+}, distance: () => {
+  {
+    return k0;
+  }
+}, dist: () => {
+  {
+    return SK;
+  }
+}, cross: () => {
+  {
+    return z;
+  }
+}, create: () => {
+  {
+    return x;
+  }
+}, copy: () => {
+  {
+    return eB;
+  }
+}, clone: () => {
+  {
+    return xB;
+  }
+}, ceil: () => {
+  {
+    return oB;
+  }
+}, bezier: () => {
+  {
+    return OK;
+  }
+}, angle: () => {
+  {
+    return EK;
+  }
+}, add: () => {
+  {
+    return uB;
+  }
+} });
+var kK = D0;
+var NK = P0;
+var RK = A0;
+var SK = k0;
+var TK = N0;
+var K0 = I0;
+var _K = R0;
+var jK = function() {
+  var B = x();
+  return function(K, W, X, Y, $, Q) {
     var Z, O;
+    if (!W)
+      W = 3;
     if (!X)
-      X = 3;
-    if (!Y)
-      Y = 0;
-    if ($)
-      O = Math.min($ * X + Y, W.length);
+      X = 0;
+    if (Y)
+      O = Math.min(Y * W + X, K.length);
     else
-      O = W.length;
-    for (Z = Y;Z < O; Z += X)
-      K[0] = W[Z], K[1] = W[Z + 1], K[2] = W[Z + 2], B(K, K, Q), W[Z] = K[0], W[Z + 1] = K[1], W[Z + 2] = K[2];
-    return W;
+      O = K.length;
+    for (Z = X;Z < O; Z += W)
+      B[0] = K[Z], B[1] = K[Z + 1], B[2] = K[Z + 2], $(B, B, Q), K[Z] = B[0], K[Z + 1] = B[1], K[Z + 2] = B[2];
+    return K;
   };
 }();
-var JX = function() {
-  var K = jW();
-  return function(W, X, Y, $, B, Q) {
+var LW = function() {
+  var B = hK();
+  return function(K, W, X, Y, $, Q) {
     var Z, O;
+    if (!W)
+      W = 4;
     if (!X)
-      X = 4;
-    if (!Y)
-      Y = 0;
-    if ($)
-      O = Math.min($ * X + Y, W.length);
+      X = 0;
+    if (Y)
+      O = Math.min(Y * W + X, K.length);
     else
-      O = W.length;
-    for (Z = Y;Z < O; Z += X)
-      K[0] = W[Z], K[1] = W[Z + 1], K[2] = W[Z + 2], K[3] = W[Z + 3], B(K, K, Q), W[Z] = K[0], W[Z + 1] = K[1], W[Z + 2] = K[2], W[Z + 3] = K[3];
-    return W;
+      O = K.length;
+    for (Z = X;Z < O; Z += W)
+      B[0] = K[Z], B[1] = K[Z + 1], B[2] = K[Z + 2], B[3] = K[Z + 3], $(B, B, Q), K[Z] = B[0], K[Z + 1] = B[1], K[Z + 2] = B[2], K[Z + 3] = B[3];
+    return K;
   };
 }();
-var yW = N0;
-var zW = k0;
-var sW = S0;
-var rW = _0;
-var mW = j0;
-var xW = v0;
-var i0 = h0;
-var y0 = g0;
-var eW = q0;
-var z0 = M0;
-var bW = z0;
+var zK = S0;
+var sK = T0;
+var rK = _0;
+var mK = j0;
+var xK = h0;
+var eK = n0;
+var y0 = M0;
+var z0 = q0;
+var bK = f0;
 var s0 = F0;
-var uW = s0;
-var Y0 = p0;
-var oW = f0;
-var tW = w0;
-var aW = function() {
-  var K = e(), W = b(1, 0, 0), X = b(0, 1, 0);
-  return function(Y, $, B) {
-    var Q = u($, B);
+var uK = s0;
+var r0 = p0;
+var oK = r0;
+var X0 = g0;
+var tK = w0;
+var aK = d0;
+var BW = function() {
+  var B = x(), K = e(1, 0, 0), W = e(0, 1, 0);
+  return function(X, Y, $) {
+    var Q = b(Y, $);
     if (Q < -0.999999) {
-      if (s(K, W, $), W0(K) < 0.000001)
-        s(K, X, $);
-      return K0(K, K), d0(Y, K, Math.PI), Y;
+      if (z(B, K, Y), K0(B) < 0.000001)
+        z(B, W, Y);
+      return B0(B, B), v0(X, B, Math.PI), X;
     } else if (Q > 0.999999)
-      return Y[0] = 0, Y[1] = 0, Y[2] = 0, Y[3] = 1, Y;
+      return X[0] = 0, X[1] = 0, X[2] = 0, X[3] = 1, X;
     else
-      return s(K, $, B), Y[0] = K[0], Y[1] = K[1], Y[2] = K[2], Y[3] = 1 + Q, Y0(Y, Y);
+      return z(B, Y, $), X[0] = B[0], X[1] = B[1], X[2] = B[2], X[3] = 1 + Q, X0(X, X);
   };
 }();
-var KX = function() {
-  var K = X0(), W = X0();
-  return function(X, Y, $, B, Q, Z) {
-    return o(K, Y, Q, Z), o(W, $, B, Z), o(X, K, W, 2 * Z * (1 - Z)), X;
+var KW = function() {
+  var B = W0(), K = W0();
+  return function(W, X, Y, $, Q, Z) {
+    return u(B, X, Q, Z), u(K, Y, $, Z), u(W, B, K, 2 * Z * (1 - Z)), W;
   };
 }();
-var WX = function() {
-  var K = O0();
-  return function(W, X, Y, $) {
-    return K[0] = Y[0], K[3] = Y[1], K[6] = Y[2], K[1] = $[0], K[4] = $[1], K[7] = $[2], K[2] = -X[0], K[5] = -X[1], K[8] = -X[2], Y0(W, c0(W, K));
+var WW = function() {
+  var B = G0();
+  return function(K, W, X, Y) {
+    return B[0] = X[0], B[3] = X[1], B[6] = X[2], B[1] = Y[0], B[4] = Y[1], B[7] = Y[2], B[2] = -W[0], B[5] = -W[1], B[8] = -W[2], X0(K, i0(K, B));
   };
 }();
 
 class n {
   d;
   listeners = new Set;
-  constructor(K) {
-    this.elem = K;
+  constructor(B) {
+    this.elem = B;
   }
-  addChangeListener(K) {
-    return this.listeners.add(K), this;
+  addChangeListener(B) {
+    return this.listeners.add(B), this;
   }
-  removeChangeListener(K) {
-    this.listeners.delete(K);
+  removeChangeListener(B) {
+    this.listeners.delete(B);
   }
   onChange() {
-    for (let K of this.listeners)
-      K.onChange(this.elem);
+    for (let B of this.listeners)
+      B.onChange(this.elem);
   }
 }
-var XX = Math.PI / 90;
-var $0 = [0, 0, 0];
-var r0 = S.create();
-var m0 = S.create();
-var t = m.create();
+var XW = Math.PI / 90;
+var Y0 = [0, 0, 0];
+var m0 = T.create();
+var x0 = T.create();
+var o = r.create();
 
-class x {
-  static HIDDEN = x.create().scale(0, 0, 0);
-  static IDENTITY = x.create();
-  #K = Float32Array.from(S.create());
-  #W = new n(this);
+class m {
+  static HIDDEN = m.create().scale(0, 0, 0);
+  static IDENTITY = m.create();
+  #B = Float32Array.from(T.create());
+  #K = new n(this);
   constructor() {
     this.identity();
   }
-  addChangeListener(K) {
-    return this.#W.addChangeListener(K), this;
+  addChangeListener(B) {
+    return this.#K.addChangeListener(B), this;
   }
-  removeChangeListener(K) {
-    this.#W.removeChangeListener(K);
+  removeChangeListener(B) {
+    this.#K.removeChangeListener(B);
   }
   static create() {
-    return new x;
+    return new m;
   }
-  copy(K) {
-    return S.copy(this.#K, K.getMatrix()), this.#W.onChange(), this;
+  copy(B) {
+    return T.copy(this.#B, B.getMatrix()), this.#K.onChange(), this;
   }
   identity() {
-    return S.identity(this.#K), this.#W.onChange(), this;
+    return T.identity(this.#B), this.#K.onChange(), this;
   }
-  invert(K) {
-    return S.invert(this.#K, K?.getMatrix() ?? this.getMatrix()), this.#W.onChange(), this;
+  invert(B) {
+    return T.invert(this.#B, B?.getMatrix() ?? this.getMatrix()), this.#K.onChange(), this;
   }
-  multiply(K) {
-    return S.multiply(this.#K, this.#K, K.getMatrix()), this.#W.onChange(), this;
+  multiply(B) {
+    return T.multiply(this.#B, this.#B, B.getMatrix()), this.#K.onChange(), this;
   }
-  multiply2(K, W) {
-    return S.multiply(this.#K, K.getMatrix(), W.getMatrix()), this.#W.onChange(), this;
+  multiply2(B, K) {
+    return T.multiply(this.#B, B.getMatrix(), K.getMatrix()), this.#K.onChange(), this;
   }
-  multiply3(K, W, X) {
-    return this.multiply2(K, W), this.multiply(X), this;
+  multiply3(B, K, W) {
+    return this.multiply2(B, K), this.multiply(W), this;
   }
-  translate(K, W, X) {
-    const Y = $0;
-    return Y[0] = K, Y[1] = W, Y[2] = X, this.move(Y);
+  translate(B, K, W) {
+    const X = Y0;
+    return X[0] = B, X[1] = K, X[2] = W, this.move(X);
   }
-  move(K) {
-    return S.translate(this.#K, this.#K, K), this.#W.onChange(), this;
+  move(B) {
+    return T.translate(this.#B, this.#B, B), this.#K.onChange(), this;
   }
-  rotateX(K) {
-    return S.rotateX(this.#K, this.#K, K), this.#W.onChange(), this;
+  rotateX(B) {
+    return T.rotateX(this.#B, this.#B, B), this.#K.onChange(), this;
   }
-  rotateY(K) {
-    return S.rotateY(this.#K, this.#K, K), this.#W.onChange(), this;
+  rotateY(B) {
+    return T.rotateY(this.#B, this.#B, B), this.#K.onChange(), this;
   }
-  rotateZ(K) {
-    return S.rotateZ(this.#K, this.#K, K), this.#W.onChange(), this;
+  rotateZ(B) {
+    return T.rotateZ(this.#B, this.#B, B), this.#K.onChange(), this;
   }
-  setXRotation(K) {
-    return S.fromXRotation(this.getMatrix(), K), this.#W.onChange(), this;
+  setXRotation(B) {
+    return T.fromXRotation(this.getMatrix(), B), this.#K.onChange(), this;
   }
-  setYRotation(K) {
-    return S.fromYRotation(this.getMatrix(), K), this.#W.onChange(), this;
+  setYRotation(B) {
+    return T.fromYRotation(this.getMatrix(), B), this.#K.onChange(), this;
   }
-  scale(K, W, X) {
-    return S.scale(this.#K, this.#K, [K, W ?? K, X ?? K]), this.#W.onChange(), this;
+  scale(B, K, W) {
+    return T.scale(this.#B, this.#B, [B, K ?? B, W ?? B]), this.#K.onChange(), this;
   }
-  perspective(K, W, X, Y) {
-    return S.perspective(this.#K, K * XX, W, X, Y), this.#W.onChange(), this;
+  perspective(B, K, W, X) {
+    return T.perspective(this.#B, B * XW, K, W, X), this.#K.onChange(), this;
   }
-  ortho(K, W, X, Y, $, B) {
-    return S.ortho(this.#K, K, W, X, Y, $, B), this.#W.onChange(), this;
+  ortho(B, K, W, X, Y, $) {
+    return T.ortho(this.#B, B, K, W, X, Y, $), this.#K.onChange(), this;
   }
-  combine(K, W, X = 0.5) {
-    return S.multiplyScalar(r0, K.getMatrix(), 1 - X), S.multiplyScalar(m0, W.getMatrix(), X), S.add(this.#K, r0, m0), this.#W.onChange(), this;
+  combine(B, K, W = 0.5) {
+    return T.multiplyScalar(m0, B.getMatrix(), 1 - W), T.multiplyScalar(x0, K.getMatrix(), W), T.add(this.#B, m0, x0), this.#K.onChange(), this;
   }
-  static getMoveVector(K, W, X, Y) {
-    const $ = $0;
-    if ($[0] = K, $[1] = W, $[2] = X, Y)
-      S.getRotation(t, Y.getMatrix()), m.invert(t, t), r.transformQuat($, $, t);
-    return $;
+  static getMoveVector(B, K, W, X) {
+    const Y = Y0;
+    if (Y[0] = B, Y[1] = K, Y[2] = W, X)
+      T.getRotation(o, X.getMatrix()), r.invert(o, o), s.transformQuat(Y, Y, o);
+    return Y;
   }
   getPosition() {
-    const K = $0;
-    return K[0] = this.#K[12], K[1] = this.#K[13], K[2] = this.#K[14], K;
+    const B = Y0;
+    return B[0] = this.#B[12], B[1] = this.#B[13], B[2] = this.#B[14], B;
   }
-  setVector(K) {
-    return this.setPosition(K[0], K[1], K[2]);
+  setVector(B) {
+    return this.setPosition(B[0], B[1], B[2]);
   }
-  setPosition(K, W, X) {
-    return this.#K[12] = K, this.#K[13] = W, this.#K[14] = X, this.#W.onChange(), this;
+  setPosition(B, K, W) {
+    return this.#B[12] = B, this.#B[13] = K, this.#B[14] = W, this.#K.onChange(), this;
   }
   getMatrix() {
-    return this.#K;
+    return this.#B;
   }
 }
-var w = x;
-
-class x0 {
-  w;
-  q;
-  #K;
-  #W = false;
-  #X = 0;
-  #Y;
-  #$;
-  constructor(K, W, X) {
-    this.getValue = W, this.apply = X, this.#$ = K, this.#K = this.getValue(K);
-  }
-  set element(K) {
-    this.#$ = K, this.#K = this.getValue(K), this.#Y = undefined;
-  }
-  setGoal(K, W, X) {
-    if (this.#Y && this.#Y !== X)
-      return;
-    if (this.#K !== K || this.#X !== W)
-      this.#X = W, this.#K = K, this.#Y = X, this.#W = true;
-  }
-  get goal() {
-    return this.#K;
-  }
-  update(K) {
-    if (this.#W) {
-      const W = this.getValue(this.#$), X = this.goal - W, Y = Math.min(Math.abs(X), this.#X * K);
-      if (Y <= 0.01)
-        this.apply(this.#$, this.goal), this.#W = false, this.#Y = undefined;
-      else
-        this.apply(this.#$, W + Y * Math.sign(X));
-    }
-    return this.#W;
-  }
-}
+var w = m;
 
 class e0 {
+  w;
+  q;
+  #B;
+  #K = false;
+  #W = 0;
+  #X;
+  #Y;
+  constructor(B, K, W) {
+    this.getValue = K, this.apply = W, this.#Y = B, this.#B = this.getValue(B);
+  }
+  set element(B) {
+    this.#Y = B, this.#B = this.getValue(B), this.#X = undefined;
+  }
+  setGoal(B, K, W) {
+    if (this.#X && this.#X !== W)
+      return;
+    if (this.#B !== B || this.#W !== K)
+      this.#W = K, this.#B = B, this.#X = W, this.#K = true;
+  }
+  get goal() {
+    return this.#B;
+  }
+  update(B) {
+    if (this.#K) {
+      const K = this.getValue(this.#Y), W = this.goal - K, X = Math.min(Math.abs(W), this.#W * B);
+      if (X <= 0.01)
+        this.apply(this.#Y, this.goal), this.#K = false, this.#X = undefined;
+      else
+        this.apply(this.#Y, K + X * Math.sign(W));
+    }
+    return this.#K;
+  }
+}
+
+class b0 {
   i;
   f;
   warningLimit = 50000;
-  #K = new Set;
-  #W = [];
-  constructor(K, W) {
-    this.initCall = K, this.onRecycle = W;
+  #B = new Set;
+  #K = [];
+  constructor(B, K) {
+    this.initCall = B, this.onRecycle = K;
   }
-  create(...K) {
-    const W = this.#W.pop();
-    if (W)
-      return this.#K.add(W), this.initCall(W, ...K);
-    const X = this.initCall(undefined, ...K);
-    return this.#K.add(X), this.#Y(), X;
+  create(...B) {
+    const K = this.#K.pop();
+    if (K)
+      return this.#B.add(K), this.initCall(K, ...B);
+    const W = this.initCall(undefined, ...B);
+    return this.#B.add(W), this.#X(), W;
   }
-  recycle(K) {
-    this.#K.delete(K), this.#X(K);
+  recycle(B) {
+    this.#B.delete(B), this.#W(B);
   }
   recycleAll() {
-    for (let K of this.#K)
-      this.#X(K);
-    this.#K.clear();
+    for (let B of this.#B)
+      this.#W(B);
+    this.#B.clear();
   }
   clear() {
-    this.#W.length = 0, this.#K.clear();
+    this.#K.length = 0, this.#B.clear();
   }
   countObjectsInExistence() {
-    return this.#K.size + this.#W.length;
+    return this.#B.size + this.#K.length;
   }
-  #X(K) {
-    this.#W.push(K), this.onRecycle?.(K);
+  #W(B) {
+    this.#K.push(B), this.onRecycle?.(B);
   }
-  #Y() {
+  #X() {
     if (this.countObjectsInExistence() === this.warningLimit)
-      console.warn("ObjectPool already created", this.#K.size + this.#W.length, "in", this.constructor.name);
+      console.warn("ObjectPool already created", this.#B.size + this.#K.length, "in", this.constructor.name);
   }
 }
 
-class b0 extends e0 {
+class u0 extends b0 {
   constructor() {
-    super((K, W) => {
-      if (!K)
-        return new x0(W, (X) => X.valueOf(), (X, Y) => X.setValue(Y));
-      return K.element = W, K;
+    super((B, K) => {
+      if (!B)
+        return new e0(K, (W) => W.valueOf(), (W, X) => W.setValue(X));
+      return B.element = K, B;
     });
   }
 }
-var YX = new b0;
+var YW = new u0;
 
 class l {
   w;
   q;
-  #K = 0;
-  #W;
-  constructor(K = 0, W, X = YX) {
-    this.onChange = W, this.pool = X, this.#K = K;
+  #B = 0;
+  #K;
+  constructor(B = 0, K, W = YW) {
+    this.onChange = K, this.pool = W, this.#B = B;
   }
   valueOf() {
-    return this.#K;
+    return this.#B;
   }
-  setValue(K) {
-    if (K !== this.#K)
-      this.#K = K, this.onChange?.(this.#K);
+  setValue(B) {
+    if (B !== this.#B)
+      this.#B = B, this.onChange?.(this.#B);
     return this;
   }
-  addValue(K) {
-    return this.setValue(this.#K + K), this;
+  addValue(B) {
+    return this.setValue(this.#B + B), this;
   }
-  update(K) {
-    if (this.#W) {
-      const W = !!this.#W.update(K);
-      if (!W)
-        this.pool.recycle(this.#W), this.#W = undefined;
-      return W;
+  update(B) {
+    if (this.#K) {
+      const K = !!this.#K.update(B);
+      if (!K)
+        this.pool.recycle(this.#K), this.#K = undefined;
+      return K;
     }
     return false;
   }
-  refresh({ deltaTime: K, stopUpdate: W }) {
-    if (!this.update(K))
-      W();
+  refresh({ deltaTime: B, stopUpdate: K }) {
+    if (!this.update(B))
+      K();
   }
-  progressTowards(K, W, X, Y) {
-    if (!this.#W)
-      this.#W = this.pool.create(this);
-    if (this.#W.setGoal(K, W, X), Y)
-      Y.loop(this, undefined);
+  progressTowards(B, K, W, X) {
+    if (!this.#K)
+      this.#K = this.pool.create(this);
+    if (this.#K.setGoal(B, K, W), X)
+      X.loop(this, undefined);
   }
   get goal() {
-    return this.#W?.goal ?? this.valueOf();
-  }
-}
-class c {
-  static toVector(K, W, X, Y) {
-    return Y[0] = K, Y[1] = W, Y[2] = X, Y;
-  }
-  static transformToPosition(K, W) {
-    const X = K.getMatrix();
-    W[0] = X[12], W[1] = X[13], W[2] = X[14];
+    return this.#K?.goal ?? this.valueOf();
   }
 }
 var d;
-(function(Y) {
-  Y[Y["AT_POSITION"] = 0] = "AT_POSITION";
-  Y[Y["MOVED"] = 1] = "MOVED";
-  Y[Y["BLOCKED"] = 2] = "BLOCKED";
+(function(X) {
+  X[X["AT_POSITION"] = 0] = "AT_POSITION";
+  X[X["MOVED"] = 1] = "MOVED";
+  X[X["BLOCKED"] = 2] = "BLOCKED";
 })(d || (d = {}));
-var B0 = function(K, W) {
-  if (K) {
-    const X = K.length.valueOf();
-    for (let Y = 0;Y < X; Y++) {
-      const $ = K.at(Y);
-      if ($ !== undefined && W($, Y))
+var $0 = function(B, K) {
+  if (B) {
+    const W = B.length.valueOf();
+    for (let X = 0;X < W; X++) {
+      const Y = B.at(X);
+      if (Y !== undefined && K(Y, X))
         return true;
     }
   }
   return false;
 };
 
-class o0 {
-  #K = w.create().setPosition(0, 0, 0);
-  #W = [0, 0, 0];
-  #X = new n(this);
+class t0 {
+  #B = w.create().setPosition(0, 0, 0);
+  #K = [0, 0, 0];
+  #W = new n(this);
   position = [0, 0, 0];
   blockers;
-  constructor({ blockers: K } = {}) {
-    this.blockers = K, this.#K.addChangeListener({ onChange: () => {
-      c.transformToPosition(this.#K, this.position), this.#X.onChange();
+  constructor({ blockers: B } = {}) {
+    this.blockers = B, this.#B.addChangeListener({ onChange: () => {
+      Q0(this.#B, this.position), this.#W.onChange();
     } });
   }
-  addChangeListener(K) {
-    return this.#X.addChangeListener(K), this;
+  addChangeListener(B) {
+    return this.#W.addChangeListener(B), this;
   }
-  removeChangeListener(K) {
-    this.#X.removeChangeListener(K);
+  removeChangeListener(B) {
+    this.#W.removeChangeListener(B);
   }
-  moveBy(K, W, X, Y) {
-    const $ = w.getMoveVector(K, W, X, Y), B = B0(this.blockers, (Q) => Q.isBlocked(c.toVector(this.position[0] + $[0], this.position[1] + $[1], this.position[2] + $[2], this.#W), this.position));
-    if (!B)
-      if ($[0] || $[1] || $[2])
-        this.#K.move($);
+  moveBy(B, K, W, X) {
+    const Y = w.getMoveVector(B, K, W, X), $ = $0(this.blockers, (Q) => Q.isBlocked(t(this.position[0] + Y[0], this.position[1] + Y[1], this.position[2] + Y[2], this.#K), this.position));
+    if (!$)
+      if (Y[0] || Y[1] || Y[2])
+        this.#B.move(Y);
       else
         return d.AT_POSITION;
-    return B ? d.BLOCKED : d.MOVED;
+    return $ ? d.BLOCKED : d.MOVED;
   }
-  moveTo(K, W, X) {
-    if (this.position[0] === K && this.position[1] === W && this.position[2] === X)
+  moveTo(B, K, W) {
+    if (this.position[0] === B && this.position[1] === K && this.position[2] === W)
       return d.AT_POSITION;
-    const Y = B0(this.blockers, ($) => $.isBlocked(c.toVector(K, W, X, this.#W), this.position));
-    if (!Y) {
-      const [$, B, Q] = this.#K.getPosition();
-      if ($ !== K || B !== W || Q !== X)
-        this.#K.setPosition(K, W, X);
+    const X = $0(this.blockers, (Y) => Y.isBlocked(t(B, K, W, this.#K), this.position));
+    if (!X) {
+      const [Y, $, Q] = this.#B.getPosition();
+      if (Y !== B || $ !== K || Q !== W)
+        this.#B.setPosition(B, K, W);
     }
-    return Y ? d.BLOCKED : d.MOVED;
+    return X ? d.BLOCKED : d.MOVED;
   }
-  movedTo(K, W, X) {
-    return this.moveTo(K, W, X), this;
+  movedTo(B, K, W) {
+    return this.moveTo(B, K, W), this;
   }
-  gotoPos(K, W, X, Y = 0.1) {
-    const $ = this.position, B = K - $[0], Q = W - $[1], Z = X - $[2], O = Math.sqrt(B * B + Q * Q + Z * Z);
+  gotoPos(B, K, W, X = 0.1) {
+    const Y = this.position, $ = B - Y[0], Q = K - Y[1], Z = W - Y[2], O = Math.sqrt($ * $ + Q * Q + Z * Z);
     if (O > 0.01) {
-      const G = Math.min(O, Y);
-      return this.moveBy(B / O * G, Q / O * G, Z / O * G);
+      const G = Math.min(O, X);
+      return this.moveBy($ / O * G, Q / O * G, Z / O * G);
     } else
-      return this.moveTo(K, W, X);
+      return this.moveTo(B, K, W);
   }
   getMatrix() {
-    return this.#K.getMatrix();
+    return this.#B.getMatrix();
   }
 }
-var QX = 1;
-var ZX = 1;
+var ZW = 1;
+var OW = 1;
 
-class t0 {
+class a0 {
+  #B = w.create();
   #K = w.create();
   #W = w.create();
-  #X = w.create();
-  #Y = [0, 0];
-  #$ = new n(this);
+  #X = [0, 0];
+  #Y = new n(this);
   perspective;
   zoom;
   constructor() {
-    const K = { onChange: () => {
-      this.#K.combine(this.#X, this.#W, this.perspective.valueOf());
+    const B = { onChange: () => {
+      this.#B.combine(this.#W, this.#K, this.perspective.valueOf());
     } };
-    this.perspective = new l(QX, K.onChange), this.zoom = new l(ZX, (W) => {
-      this.configure(this.#Y, W);
-    }), this.#W.addChangeListener(K), this.#X.addChangeListener(K), this.#K.addChangeListener(this.#$);
+    this.perspective = new l(ZW, B.onChange), this.zoom = new l(OW, (K) => {
+      this.configure(this.#X, K);
+    }), this.#K.addChangeListener(B), this.#W.addChangeListener(B), this.#B.addChangeListener(this.#Y);
   }
-  addChangeListener(K) {
-    return this.#$.addChangeListener(K), this;
+  addChangeListener(B) {
+    return this.#Y.addChangeListener(B), this;
   }
-  removeChangeListener(K) {
-    this.#$.removeChangeListener(K);
+  removeChangeListener(B) {
+    this.#Y.removeChangeListener(B);
   }
-  configPerspectiveMatrix(K, W, X, Y) {
-    this.#W.perspective(K, W, X, Y);
+  configPerspectiveMatrix(B, K, W, X) {
+    this.#K.perspective(B, K, W, X);
   }
-  configOrthoMatrix(K, W, X, Y) {
-    this.#X.ortho(-K / 2, K / 2, -W / 2, W / 2, X, Y);
+  configOrthoMatrix(B, K, W, X) {
+    this.#W.ortho(-B / 2, B / 2, -K / 2, K / 2, W, X);
   }
-  configure(K, W, X = 0.5, Y = 1e4) {
-    if (!W)
-      W = this.zoom.valueOf();
-    this.#Y[0] = K[0], this.#Y[1] = K[1];
-    const $ = this.#Y[0] / this.#Y[1], B = 45 / Math.sqrt(W);
-    this.configPerspectiveMatrix(B, $, Math.max(X, 0.00001), Y), this.configOrthoMatrix($ / W / W, 1 / W / W, -Y, Y);
+  configure(B, K, W = 0.5, X = 1e4) {
+    if (!K)
+      K = this.zoom.valueOf();
+    this.#X[0] = B[0], this.#X[1] = B[1];
+    const Y = this.#X[0] / this.#X[1], $ = 45 / Math.sqrt(K);
+    this.configPerspectiveMatrix($, Y, Math.max(W, 0.00001), X), this.configOrthoMatrix(Y / K / K, 1 / K / K, -X, X);
   }
   getMatrix() {
-    return this.#K.getMatrix();
+    return this.#B.getMatrix();
   }
 }
 export {
