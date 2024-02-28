@@ -66,8 +66,8 @@
   "dependencies": {
     "abstract-list": "^1.0.12",
     "change-listener": "^1.0.1",
-    "dok-types": "^1.0.7",
+    "dok-types": "^1.0.8",
     "gl-matrix": "^3.4.3",
-    "progressive-value": "^1.0.4"
+    "progressive-value": "^1.0.5"
   }
 }
