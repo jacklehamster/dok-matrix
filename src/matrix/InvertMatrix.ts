@@ -4,23 +4,25 @@ import Matrix from "./Matrix";
 import { Active } from "dok-types";
 
 export class InvertMatrix extends Matrix implements IMatrix, Active {
+  readonly #matrix: IMatrix;
   readonly #listener: IChangeListener<IMatrix> = {
     onChange: (elem) => {
       this.invert(elem);
     },
   };
-  constructor(activate: boolean = true) {
+  constructor(matrix: IMatrix, activate: boolean = true) {
     super();
+    this.#matrix = matrix;
     if (activate) {
       this.activate();
     }
   }
 
   activate() {
-    this.addChangeListener(this.#listener);
+    this.#matrix.addChangeListener(this.#listener);
   }
 
   deactivate() {
-    this.removeChangeListener(this.#listener);
+    this.#matrix.removeChangeListener(this.#listener);
   }
 }
