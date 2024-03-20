@@ -13,7 +13,7 @@ interface Props {
 }
 
 export class PositionMatrix implements IPositionMatrix {
-  readonly #matrix = Matrix.create().setPosition(0, 0, 0);
+  readonly #matrix = Matrix.create();
   readonly #tempVector: Vector = [0, 0, 0];
   readonly #changeNotifier = new ChangeNotifier(this);
   readonly position: Vector = [0, 0, 0];

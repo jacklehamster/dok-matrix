@@ -8,6 +8,7 @@ import { IPositionMatrix, MoveResult } from "./matrix/IPositionMatrix";
 import { ProjectionMatrix } from "./matrix/ProjectionMatrix";
 import Matrix from "./matrix/Matrix";
 import { transformToPosition, toVector } from "./matrix/utils/position-utils";
+import { InvertMatrix } from "./matrix/InvertMatrix";
 
 export type { ICollisionDetector, Angle, IAngleMatrix, IMatrix, IPositionMatrix };
-export { angleStep, createTurnMatrix, createTiltMatrix, PositionMatrix, ProjectionMatrix, Matrix, MoveResult, transformToPosition, toVector };
+export { angleStep, createTurnMatrix, createTiltMatrix, PositionMatrix, ProjectionMatrix, Matrix, MoveResult, transformToPosition, toVector, InvertMatrix };

@@ -22,9 +22,7 @@ export class ProjectionMatrix implements IMatrix {
       }
     };
     this.perspective = new NumVal(DEFAULT_PERSPECTIVE_LEVEL, onChangeProjection.onChange);
-    this.zoom = new NumVal(DEFAULT_ZOOM, zoom => {
-      this.configure(this.#size, zoom);
-    });
+    this.zoom = new NumVal(DEFAULT_ZOOM, zoom => this.configure(this.#size, zoom));
     this.#perspectiveMatrix.addChangeListener(onChangeProjection);
     this.#orthoMatrix.addChangeListener(onChangeProjection);
     this.#baseMatrix.addChangeListener(this.#changeNotifier);

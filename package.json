@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "abstract-list": "^1.0.13",
-    "change-listener": "^1.0.1",
+    "change-listener": "^1.0.2",
     "progressive-value": "^1.0.10"
   }
 }
